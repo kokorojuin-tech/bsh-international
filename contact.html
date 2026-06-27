@@ -3,111 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>상담 신청 — BSH International</title>
-  <meta name="description" content="비에스에이치 인터내셔널 의료관광 상담 신청. 다국어 상담으로 적합한 의료기관과 예상 비용을 안내합니다." />
+  <title>고객 문의 — BSH International</title>
+  <meta name="description" content="BSH International 문의 — 의료관광, 수출지원, 경영·코칭 컨설팅을 다국어 상담으로 안내합니다." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body data-title-ko="상담 신청 — BSH International" data-title-en="Contact — BSH International">
+<body data-title-key="contact.title" data-subnav-key="nav.contact">
 
   <!-- HERO -->
-  <section class="hero" style="padding-bottom:32px">
-    <div class="container">
-      <p class="eyebrow" data-ko="상담 신청" data-en="Get started">상담 신청</p>
-      <h1 class="display-xl" data-ko="한국에서의 치료, 한 통의 문의로 시작됩니다." data-en="Your treatment in Korea starts with one message.">한국에서의 치료, 한 통의 문의로 시작됩니다.</h1>
-      <p class="lead body-lg" data-ko="다국어 상담으로 환자 상태를 확인하고, 적합한 의료기관과 예상 비용을 안내해 드립니다. 아래 양식을 남겨 주시면 빠르게 회신하겠습니다." data-en="Our multilingual team reviews your case and recommends the right hospital with an estimated cost. Leave your details below and we'll reply promptly.">다국어 상담으로 환자 상태를 확인하고, 적합한 의료기관과 예상 비용을 안내해 드립니다. 아래 양식을 남겨 주시면 빠르게 회신하겠습니다.</p>
+  <section class="tile tile-light" style="padding-bottom:40px">
+    <div class="tile-center stack-hero">
+      <span class="section-label" data-i18n="contact.hero_eyebrow">고객 문의</span>
+      <h1 class="t-hero" data-i18n="contact.hero_h1">무엇이든 한 통의 문의로 시작됩니다.</h1>
+      <p class="t-lead-airy muted lead-measure" data-i18n="contact.hero_lead">의료관광, 수출지원, 경영·코칭 — 다국어 상담으로 가장 적합한 길을 안내해 드립니다. 아래 양식을 남겨 주시면 빠르게 회신하겠습니다.</p>
     </div>
   </section>
 
-  <!-- FORM (lime block) + info -->
-  <section class="section-tight" style="padding-top:24px">
-    <div class="container">
-      <div class="block-split" style="align-items:start">
+  <!-- FORM + INFO (parchment) -->
+  <section class="tile tile-parchment" style="padding-top:40px">
+    <div class="contact-grid">
 
-        <!-- form -->
-        <div class="block block-lime pad-xl">
-          <p class="eyebrow" data-ko="상담 양식" data-en="Consultation form">상담 양식</p>
-          <h2 class="headline" style="margin:8px 0 24px" data-ko="무료 의료관광 상담" data-en="Free medical-tourism consultation">무료 의료관광 상담</h2>
-
-          <form id="contactForm" class="form" novalidate>
-            <div class="form-row">
-              <div class="field">
-                <label data-ko="이름" data-en="Name">이름</label>
-                <input type="text" name="name" required data-ko-ph="홍길동" data-en-ph="Your name" placeholder="홍길동" />
-              </div>
-              <div class="field">
-                <label data-ko="국적" data-en="Nationality">국적</label>
-                <input type="text" name="country" data-ko-ph="예: 일본" data-en-ph="e.g. Japan" placeholder="예: 일본" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="field">
-                <label data-ko="이메일" data-en="Email">이메일</label>
-                <input type="email" name="email" required data-ko-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
-              </div>
-              <div class="field">
-                <label data-ko="연락처 (전화/메신저)" data-en="Phone / messenger">연락처 (전화/메신저)</label>
-                <input type="text" name="phone" data-ko-ph="WeChat · LINE · 전화번호" data-en-ph="WeChat · LINE · phone" placeholder="WeChat · LINE · 전화번호" />
-              </div>
+      <!-- form -->
+      <div>
+        <span class="section-label" data-i18n="contact.form_eyebrow">문의 양식</span>
+        <h2 class="t-section" style="margin-bottom:24px" data-i18n="contact.form_h2">무료 상담 신청</h2>
+        <form id="contactForm" class="form" action="https://formsubmit.co/ookokoro@bshinternational.co.kr" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="[BSH] 새 상담 문의 · New inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+          <div class="form-row">
+            <div class="field">
+              <label data-i18n="contact.lb_name">이름</label>
+              <input type="text" name="name" required data-i18n-ph="contact.ph_name" placeholder="홍길동" />
             </div>
             <div class="field">
-              <label data-ko="관심 분야" data-en="Area of interest">관심 분야</label>
-              <select name="field">
-                <option data-ko="선택해 주세요" data-en="Please select">선택해 주세요</option>
-                <option data-ko="성형·피부과" data-en="Plastic surgery & dermatology">성형·피부과</option>
-                <option data-ko="건강검진" data-en="Health screening">건강검진</option>
-                <option data-ko="암·중증질환" data-en="Cancer & critical care">암·중증질환</option>
-                <option data-ko="안과 (라식·라섹)" data-en="Ophthalmology (LASIK/LASEK)">안과 (라식·라섹)</option>
-                <option data-ko="기타 (치과·재활·한방 등)" data-en="Other (dental, rehab, wellness)">기타 (치과·재활·한방 등)</option>
-              </select>
+              <label data-i18n="contact.lb_country">국적</label>
+              <input type="text" name="country" data-i18n-ph="contact.ph_country" placeholder="예: 일본" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label data-i18n="contact.lb_email">이메일</label>
+              <input type="email" name="email" required placeholder="name@email.com" />
             </div>
             <div class="field">
-              <label data-ko="문의 내용" data-en="Your message">문의 내용</label>
-              <textarea name="message" data-ko-ph="증상, 희망 일정, 궁금한 점을 적어 주세요." data-en-ph="Tell us your symptoms, preferred dates and questions." placeholder="증상, 희망 일정, 궁금한 점을 적어 주세요."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%" data-ko="상담 신청 보내기" data-en="Send consultation request">상담 신청 보내기</button>
-            <p class="form-note" data-ko="※ 입력하신 정보는 상담 목적으로만 사용됩니다." data-en="※ Your information is used only for consultation purposes.">※ 입력하신 정보는 상담 목적으로만 사용됩니다.</p>
-            <div id="formSuccess" class="form-success">
-              <strong data-ko="신청이 접수되었습니다. 감사합니다!" data-en="Your request has been received. Thank you!">신청이 접수되었습니다. 감사합니다!</strong>
-              <p class="body-sm" style="margin-top:8px" data-ko="담당 코디네이터가 영업일 기준 1–2일 내에 회신드립니다." data-en="A coordinator will reply within 1–2 business days.">담당 코디네이터가 영업일 기준 1–2일 내에 회신드립니다.</p>
-            </div>
-          </form>
-        </div>
-
-        <!-- info -->
-        <div class="stack">
-          <div class="card">
-            <p class="eyebrow muted" data-ko="직접 문의" data-en="Reach us directly">직접 문의</p>
-            <h3 class="card-title" style="margin:8px 0 16px" data-ko="언제든 연락 주세요" data-en="Get in touch anytime">언제든 연락 주세요</h3>
-            <table class="table wide">
-              <tbody>
-                <tr><th data-ko="전화" data-en="Phone">전화</th><td><a href="tel:+821039139380">+82-10-3913-9380</a></td></tr>
-                <tr><th data-ko="이메일" data-en="Email">이메일</th><td><a href="mailto:ookokoro@bshinternational.co.kr">ookokoro@bshinternational.co.kr</a></td></tr>
-                <tr><th data-ko="주소" data-en="Address">주소</th><td data-ko="서울특별시 마포구" data-en="Mapo-gu, Seoul, Republic of Korea">서울특별시 마포구</td></tr>
-                <tr><th data-ko="사업자번호" data-en="Reg. No.">사업자번호</th><td>180-88-03539</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="card soft">
-            <p class="caption muted" data-ko="상담 가능 언어" data-en="Consultation languages">상담 가능 언어</p>
-            <div class="chips">
-              <span class="chip">한국어 / KO</span>
-              <span class="chip">日本語 / JP</span>
-              <span class="chip">中文 / CN</span>
-              <span class="chip">English / EN</span>
+              <label data-i18n="contact.lb_phone">연락처 (전화/메신저)</label>
+              <input type="text" name="phone" data-i18n-ph="contact.ph_phone" placeholder="WeChat · LINE · 전화번호" />
             </div>
           </div>
-          <div class="card soft">
-            <p class="body-sm" data-ko="비에스에이치 인터내셔널은 외국인환자의 안전하고 만족스러운 한국 의료 경험을 위해 최선을 다하겠습니다." data-en="BSH International is committed to a safe and satisfying Korean medical experience for every overseas patient.">비에스에이치 인터내셔널은 외국인환자의 안전하고 만족스러운 한국 의료 경험을 위해 최선을 다하겠습니다.</p>
+          <div class="field">
+            <label data-i18n="contact.lb_field">문의 분야</label>
+            <select name="field">
+              <option data-i18n="contact.opt0">선택해 주세요</option>
+              <option data-i18n="contact.opt_med">외국인환자 유치 (의료관광)</option>
+              <option data-i18n="contact.opt_exp">해외사업·수출지원</option>
+              <option data-i18n="contact.opt_con">경영·코칭 컨설팅</option>
+              <option data-i18n="contact.opt_etc">기타 문의</option>
+            </select>
           </div>
-        </div>
-
+          <div class="field">
+            <label data-i18n="contact.lb_msg">문의 내용</label>
+            <textarea name="message" data-i18n-ph="contact.ph_msg" placeholder="궁금한 점, 희망 일정 등을 자유롭게 적어 주세요."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="contact.submit">문의 보내기</button>
+          <p class="form-note" data-i18n="contact.form_note">※ 입력하신 정보는 상담 목적으로만 사용됩니다.</p>
+          <div id="formSuccess" class="form-success">
+            <strong data-i18n="contact.success_t">문의가 접수되었습니다. 감사합니다!</strong>
+            <p class="t-caption muted" style="margin-top:8px" data-i18n="contact.success_d">담당자가 영업일 기준 1–2일 내에 회신드립니다.</p>
+          </div>
+        </form>
       </div>
+
+      <!-- info -->
+      <div>
+        <span class="section-label" data-i18n="contact.info_eyebrow">직접 문의</span>
+        <h3 class="t-tagline" style="margin-bottom:16px" data-i18n="contact.info_h3">언제든 연락 주세요</h3>
+        <dl class="spec" style="border-top:1px solid var(--hairline);max-width:none">
+          <div class="spec-row" style="grid-template-columns:120px 1fr"><dt data-i18n="contact.info_phone">전화</dt><dd><a class="tlink" href="tel:+821039139380">+82-10-3913-9380</a></dd></div>
+          <div class="spec-row" style="grid-template-columns:120px 1fr"><dt data-i18n="contact.info_email">이메일</dt><dd><a class="tlink" href="mailto:ookokoro@bshinternational.co.kr">ookokoro@bshinternational.co.kr</a></dd></div>
+          <div class="spec-row" style="grid-template-columns:120px 1fr"><dt data-i18n="contact.info_addr">주소</dt><dd data-i18n="contact.info_addr_v">서울특별시 마포구</dd></div>
+          <div class="spec-row" style="grid-template-columns:120px 1fr"><dt data-i18n="contact.info_reg">사업자번호</dt><dd>180-88-03539</dd></div>
+        </dl>
+
+        <p class="section-label" style="margin-top:28px" data-i18n="contact.langs_h">상담 가능 언어</p>
+        <div class="chips">
+          <span class="chip">한국어 / KO</span>
+          <span class="chip">English / EN</span>
+          <span class="chip">日本語 / JA</span>
+          <span class="chip">中文 / ZH</span>
+          <span class="chip">Монгол / MN</span>
+        </div>
+
+        <p class="t-body muted" style="margin-top:24px" data-i18n="contact.commit">BSH International은 고객 한 분 한 분의 안전하고 만족스러운 경험을 위해 최선을 다하겠습니다.</p>
+      </div>
+
     </div>
   </section>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

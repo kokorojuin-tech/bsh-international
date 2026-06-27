@@ -1,38 +1,35 @@
 /* =========================================================
-   BSH International — shared chrome + i18n
+   BSH International — "Gallery" theme chrome + i18n (5 languages)
+   Requires: assets/i18n.js (window.I18N, window.I18N_LANGS)
    ========================================================= */
 (function () {
   "use strict";
 
   var LANG_KEY = "bsh-lang";
+  var LANGS = window.I18N_LANGS || [{ code: "ko", label: "한국어", short: "KO" }];
+  var DICT = window.I18N || {};
+
+  function supported(l) { for (var i = 0; i < LANGS.length; i++) if (LANGS[i].code === l) return true; return false; }
   function getLang() {
-    try { return localStorage.getItem(LANG_KEY) || "ko"; } catch (e) { return "ko"; }
+    try { var l = localStorage.getItem(LANG_KEY); if (l && supported(l)) return l; } catch (e) {}
+    return "ko";
   }
-  function setLang(l) {
-    try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
+  function setLang(l) { try { localStorage.setItem(LANG_KEY, l); } catch (e) {} }
+  function t(key, lang) {
+    var e = DICT[key]; if (!e) return key;
+    return e[lang] != null ? e[lang] : (e.ko != null ? e.ko : key);
   }
 
-  /* ---- Nav config: [href, KO, EN] ---- */
   var NAV = [
-    ["index.html",    "홈",        "Home"],
-    ["about.html",    "회사 소개",  "About"],
-    ["fields.html",   "유치 분야",  "Treatments"],
-    ["services.html", "서비스",     "Services"],
-    ["contact.html",  "상담 신청",  "Contact"]
+    ["index.html",      "nav.home"],
+    ["about.html",      "nav.about"],
+    ["medical.html",    "nav.medical"],
+    ["export.html",     "nav.export"],
+    ["consulting.html", "nav.consulting"],
+    ["contact.html",    "nav.contact"]
   ];
 
-  /* ---- Marquee items ---- */
-  var MARQUEE = [
-    "JAPAN", "CHINA", "MONGOLIA", "K-MEDICAL",
-    "PLASTIC & DERMATOLOGY", "HEALTH SCREENING",
-    "CANCER & CRITICAL CARE", "OPHTHALMOLOGY", "ONE-STOP CARE"
-  ];
-
-  function current() {
-    var p = location.pathname.split("/").pop();
-    return p && p.length ? p : "index.html";
-  }
-
+  function current() { var p = location.pathname.split("/").pop(); return p && p.length ? p : "index.html"; }
   function el(tag, attrs, html) {
     var e = document.createElement(tag);
     if (attrs) for (var k in attrs) e.setAttribute(k, attrs[k]);
@@ -40,52 +37,53 @@
     return e;
   }
 
-  /* ---------- Build Nav ---------- */
   function buildNav() {
     var here = current();
-    var nav = el("header", { "class": "nav" });
 
-    var linksHtml = NAV.map(function (n) {
+    var links = NAV.map(function (n) {
       var active = n[0] === here ? " active" : "";
-      return '<a href="' + n[0] + '" class="' + active.trim() + '" data-ko="' + n[1] + '" data-en="' + n[2] + '">' + n[1] + "</a>";
+      return '<a href="' + n[0] + '" class="' + active.trim() + '" data-i18n="' + n[1] + '"></a>';
     }).join("");
 
-    nav.innerHTML =
-      '<div class="nav-inner">' +
-        '<a class="brand" href="index.html"><span class="dot"></span>BSH<span style="font-weight:330;color:#888;font-size:15px;margin-left:2px">International</span></a>' +
-        '<nav class="nav-links">' + linksHtml + "</nav>" +
-        '<div class="nav-right">' +
-          '<button class="lang-toggle" id="langToggle" aria-label="Language"></button>' +
-          '<div class="nav-cta">' +
-            '<a class="btn btn-secondary" href="about.html" data-ko="회사 소개" data-en="About us">회사 소개</a>' +
-            '<a class="btn btn-primary" href="contact.html" data-ko="상담 신청" data-en="Get started">상담 신청</a>' +
-          "</div>" +
+    var langOptions = LANGS.map(function (L) {
+      return '<button class="lang-item" data-lang="' + L.code + '" role="option">' +
+               '<span class="lang-short">' + L.short + '</span><span class="lang-label">' + L.label + '</span>' +
+             '</button>';
+    }).join("");
+
+    var gnav = el("header", { "class": "global-nav" });
+    gnav.innerHTML =
+      '<div class="gnav-inner">' +
+        '<a class="gnav-brand" href="index.html"><span class="dot"></span>BSH<small>International</small></a>' +
+        '<nav class="gnav-links" id="gnavLinks">' + links + '</nav>' +
+        '<div class="gnav-right">' +
+          '<div class="lang-select" id="langSelect">' +
+            '<button class="lang-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">' +
+              '<span id="langCurrent">KO</span>' +
+              '<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>' +
+            '</button>' +
+            '<div class="lang-menu" id="langMenu" role="listbox">' + langOptions + '</div>' +
+          '</div>' +
           '<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>' +
-        "</div>" +
-      "</div>";
+        '</div>' +
+      '</div>';
 
-    // marquee
-    var marquee = el("div", { "class": "marquee" });
-    var inner = MARQUEE.concat(MARQUEE).map(function (m) { return "<span>" + m + "</span>"; }).join("");
-    marquee.innerHTML = '<div class="marquee-track">' + inner + "</div>";
+    // sub-nav (frosted)
+    var titleKey = document.body.getAttribute("data-subnav-key") || "nav.home";
+    var sub = el("div", { "class": "sub-nav" });
+    sub.innerHTML =
+      '<div class="subnav-inner">' +
+        '<span class="subnav-title" data-i18n="' + titleKey + '"></span>' +
+        '<div class="subnav-right">' +
+          '<a class="subnav-link" href="about.html" data-i18n="common.overview"></a>' +
+          '<a class="btn btn-primary btn-sm" href="contact.html" data-i18n="cta.consult"></a>' +
+        '</div>' +
+      '</div>';
 
-    // mobile menu
-    var mob = el("div", { "class": "mobile-menu", id: "mobileMenu" });
-    mob.innerHTML =
-      NAV.map(function (n) {
-        return '<a href="' + n[0] + '" data-ko="' + n[1] + '" data-en="' + n[2] + '">' + n[1] + "</a>";
-      }).join("") +
-      '<div class="mob-cta">' +
-        '<a class="btn btn-secondary" href="about.html" data-ko="회사 소개" data-en="About us">회사 소개</a>' +
-        '<a class="btn btn-primary" href="contact.html" data-ko="상담 신청" data-en="Get started">상담 신청</a>' +
-      "</div>";
-
-    document.body.insertBefore(mob, document.body.firstChild);
-    document.body.insertBefore(marquee, document.body.firstChild);
-    document.body.insertBefore(nav, document.body.firstChild);
+    document.body.insertBefore(sub, document.body.firstChild);
+    document.body.insertBefore(gnav, document.body.firstChild);
   }
 
-  /* ---------- Build Footer ---------- */
   function buildFooter() {
     var f = el("footer", { "class": "footer" });
     f.innerHTML =
@@ -93,66 +91,61 @@
         '<div class="footer-wordmark">BSH</div>' +
         '<div class="footer-grid">' +
           '<div class="footer-col">' +
-            '<h4 data-ko="회사" data-en="Company">회사</h4>' +
-            '<p data-ko="비에스에이치 인터내셔널 주식회사" data-en="BSH International Co., Ltd.">비에스에이치 인터내셔널 주식회사</p>' +
-            '<p data-ko="외국인환자 유치업체 (에이전시)" data-en="Foreign-patient attraction agency">외국인환자 유치업체 (에이전시)</p>' +
-            '<p data-ko="서울특별시 마포구" data-en="Mapo-gu, Seoul, Republic of Korea">서울특별시 마포구</p>' +
-            '<p data-ko="사업자등록번호 180-88-03539" data-en="Business Reg. No. 180-88-03539">사업자등록번호 180-88-03539</p>' +
-          "</div>" +
+            '<h4 data-i18n="footer.company_h"></h4>' +
+            '<p data-i18n="footer.company_name"></p>' +
+            '<p data-i18n="footer.company_type"></p>' +
+            '<p data-i18n="footer.company_addr"></p>' +
+            '<p data-i18n="footer.company_reg"></p>' +
+          '</div>' +
           '<div class="footer-col">' +
-            '<h4 data-ko="바로가기" data-en="Explore">바로가기</h4>' +
-            '<a href="about.html" data-ko="회사 소개" data-en="About">회사 소개</a>' +
-            '<a href="fields.html" data-ko="유치 분야" data-en="Treatments">유치 분야</a>' +
-            '<a href="services.html" data-ko="서비스" data-en="Services">서비스</a>' +
-            '<a href="contact.html" data-ko="상담 신청" data-en="Contact">상담 신청</a>' +
-          "</div>" +
+            '<h4 data-i18n="footer.explore_h"></h4>' +
+            '<a href="about.html" data-i18n="nav.about"></a>' +
+            '<a href="medical.html" data-i18n="nav.medical"></a>' +
+            '<a href="export.html" data-i18n="nav.export"></a>' +
+            '<a href="consulting.html" data-i18n="nav.consulting"></a>' +
+            '<a href="contact.html" data-i18n="nav.contact"></a>' +
+          '</div>' +
           '<div class="footer-col">' +
-            '<h4 data-ko="유치 분야" data-en="Treatments">유치 분야</h4>' +
-            '<a href="fields.html" data-ko="성형·피부과" data-en="Plastic & Dermatology">성형·피부과</a>' +
-            '<a href="fields.html" data-ko="건강검진" data-en="Health Screening">건강검진</a>' +
-            '<a href="fields.html" data-ko="암·중증질환" data-en="Cancer & Critical Care">암·중증질환</a>' +
-            '<a href="fields.html" data-ko="안과·기타" data-en="Ophthalmology & More">안과·기타</a>' +
-          "</div>" +
+            '<h4 data-i18n="footer.biz_h"></h4>' +
+            '<a href="medical.html" data-i18n="home.biz1_t"></a>' +
+            '<a href="export.html" data-i18n="home.biz2_t"></a>' +
+            '<a href="consulting.html" data-i18n="home.biz3_t"></a>' +
+          '</div>' +
           '<div class="footer-col">' +
-            '<h4 data-ko="문의" data-en="Get in touch">문의</h4>' +
+            '<h4 data-i18n="footer.contact_h"></h4>' +
             '<a href="tel:+821039139380">+82-10-3913-9380</a>' +
             '<a href="mailto:ookokoro@bshinternational.co.kr">ookokoro@bshinternational.co.kr</a>' +
-            '<p data-ko="상담 언어: 한·일·중·영" data-en="Languages: KO · JP · CN · EN">상담 언어: 한·일·중·영</p>' +
-          "</div>" +
-        "</div>" +
+            '<p data-i18n="footer.langs"></p>' +
+          '</div>' +
+        '</div>' +
         '<div class="footer-bottom">' +
-          '<span>© 2026 BSH International Co., Ltd.</span>' +
-          '<span data-ko="보건복지부 외국인환자 유치업 등록" data-en="Registered medical-tourism agency · Ministry of Health & Welfare, Korea">보건복지부 외국인환자 유치업 등록</span>' +
-        "</div>" +
-      "</div>";
+          '<span data-i18n="footer.copyright">© 2026 BSH International Co., Ltd.</span>' +
+          '<span data-i18n="footer.bottom_note"></span>' +
+        '</div>' +
+      '</div>';
     document.body.appendChild(f);
   }
 
-  /* ---------- i18n apply ---------- */
   function applyLang(lang) {
     document.documentElement.lang = lang;
-    var nodes = document.querySelectorAll("[data-ko]");
+    var nodes = document.querySelectorAll("[data-i18n]");
     for (var i = 0; i < nodes.length; i++) {
-      var n = nodes[i];
-      var val = n.getAttribute("data-" + lang);
-      if (val != null) n.textContent = val;
+      var v = t(nodes[i].getAttribute("data-i18n"), lang);
+      if (v != null) nodes[i].textContent = v;
     }
-    // placeholders
-    var ph = document.querySelectorAll("[data-ko-ph]");
+    var ph = document.querySelectorAll("[data-i18n-ph]");
     for (var j = 0; j < ph.length; j++) {
-      var pv = ph[j].getAttribute("data-" + lang + "-ph");
+      var pv = t(ph[j].getAttribute("data-i18n-ph"), lang);
       if (pv != null) ph[j].setAttribute("placeholder", pv);
     }
-    // toggle label shows the OTHER language
-    var t = document.getElementById("langToggle");
-    if (t) t.innerHTML = lang === "ko" ? "KO <b>/</b> EN" : "<b>KO</b> / EN";
-    // doc title
-    if (document.body.getAttribute("data-title-" + lang)) {
-      document.title = document.body.getAttribute("data-title-" + lang);
-    }
+    var tkey = document.body.getAttribute("data-title-key");
+    if (tkey) { var tv = t(tkey, lang); if (tv) document.title = tv; }
+    var cur = document.getElementById("langCurrent");
+    if (cur) for (var k = 0; k < LANGS.length; k++) if (LANGS[k].code === lang) { cur.textContent = LANGS[k].short; break; }
+    var items = document.querySelectorAll(".lang-item");
+    for (var m = 0; m < items.length; m++) items[m].classList.toggle("active", items[m].getAttribute("data-lang") === lang);
   }
 
-  /* ---------- Wire up ---------- */
   function init() {
     buildNav();
     buildFooter();
@@ -160,43 +153,69 @@
     var lang = getLang();
     applyLang(lang);
 
+    var select = document.getElementById("langSelect");
     var toggle = document.getElementById("langToggle");
-    if (toggle) toggle.addEventListener("click", function () {
-      lang = (getLang() === "ko") ? "en" : "ko";
-      setLang(lang);
-      applyLang(lang);
-    });
-
-    var burger = document.getElementById("hamburger");
-    var menu = document.getElementById("mobileMenu");
-    if (burger && menu) {
-      burger.addEventListener("click", function () {
-        menu.classList.toggle("open");
-        document.body.style.overflow = menu.classList.contains("open") ? "hidden" : "";
+    var menu = document.getElementById("langMenu");
+    if (select && toggle && menu) {
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var open = select.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
       });
-      menu.querySelectorAll("a").forEach(function (a) {
-        a.addEventListener("click", function () {
-          menu.classList.remove("open");
-          document.body.style.overflow = "";
+      menu.querySelectorAll(".lang-item").forEach(function (b) {
+        b.addEventListener("click", function () {
+          lang = b.getAttribute("data-lang");
+          setLang(lang); applyLang(lang);
+          select.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
         });
+      });
+      document.addEventListener("click", function () {
+        select.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
       });
     }
 
-    // contact form (no backend) — show thank-you
+    var burger = document.getElementById("hamburger");
+    var glinks = document.getElementById("gnavLinks");
+    if (burger && glinks) {
+      burger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        glinks.classList.toggle("open");
+      });
+    }
+
+    // contact form → FormSubmit.co (AJAX); keeps the in-page thank-you message
     var form = document.getElementById("contactForm");
     if (form) {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var ok = document.getElementById("formSuccess");
-        if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
-        form.reset();
+        var btn = form.querySelector('button[type="submit"]') || form.querySelector("button");
+        var action = form.getAttribute("action");
+        function showOk() {
+          if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
+          form.reset();
+        }
+        if (!action) { showOk(); return; }
+        var data = {};
+        new FormData(form).forEach(function (v, k) { data[k] = v; });
+        if (data._honey) { showOk(); return; } // bot trap
+        var endpoint = action.indexOf("/ajax/") !== -1 ? action : action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+        if (btn) btn.disabled = true;
+        fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(data)
+        })
+          .then(function (r) { return r.json(); })
+          .then(function () { showOk(); })
+          .catch(function () { alert(t("contact.send_error", getLang())); })
+          .then(function () { if (btn) btn.disabled = false; });
       });
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
 })();

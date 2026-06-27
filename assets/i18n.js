@@ -1,0 +1,1758 @@
+/* =========================================================
+   BSH International — translations
+   Languages: ko (default), en, ja, zh (Simplified), mn (Mongolian)
+   ========================================================= */
+window.I18N_LANGS = [{"code":"ko","label":"한국어","short":"KO"},{"code":"en","label":"English","short":"EN"},{"code":"ja","label":"日本語","short":"JA"},{"code":"zh","label":"中文","short":"ZH"},{"code":"mn","label":"Монгол","short":"MN"}];
+
+window.I18N = {
+  "nav.home": {
+    "ko": "홈",
+    "en": "Home",
+    "ja": "ホーム",
+    "zh": "首页",
+    "mn": "Нүүр"
+  },
+  "nav.about": {
+    "ko": "회사 소개",
+    "en": "About",
+    "ja": "会社概要",
+    "zh": "公司介绍",
+    "mn": "Бидний тухай"
+  },
+  "nav.medical": {
+    "ko": "외국인환자 유치",
+    "en": "Medical Tourism",
+    "ja": "医療ツーリズム",
+    "zh": "医疗旅游",
+    "mn": "Эмнэлгийн аялал"
+  },
+  "nav.export": {
+    "ko": "해외사업·수출지원",
+    "en": "Export Support",
+    "ja": "輸出支援",
+    "zh": "出口支持",
+    "mn": "Экспортын дэмжлэг"
+  },
+  "nav.consulting": {
+    "ko": "경영·코칭 컨설팅",
+    "en": "Consulting",
+    "ja": "経営・コーチング",
+    "zh": "管理咨询",
+    "mn": "Менежмент зөвлөгөө"
+  },
+  "nav.contact": {
+    "ko": "고객 문의",
+    "en": "Contact",
+    "ja": "お問い合わせ",
+    "zh": "联系我们",
+    "mn": "Холбоо барих"
+  },
+  "cta.consult": {
+    "ko": "상담 신청",
+    "en": "Get started",
+    "ja": "相談予約",
+    "zh": "预约咨询",
+    "mn": "Зөвлөгөө авах"
+  },
+  "cta.contact": {
+    "ko": "문의하기",
+    "en": "Contact us",
+    "ja": "お問い合わせ",
+    "zh": "联系我们",
+    "mn": "Холбоо барих"
+  },
+  "cta.about": {
+    "ko": "회사 소개",
+    "en": "About us",
+    "ja": "会社概要",
+    "zh": "公司介绍",
+    "mn": "Бидний тухай"
+  },
+  "footer.company_h": {
+    "ko": "회사",
+    "en": "Company",
+    "ja": "会社",
+    "zh": "公司",
+    "mn": "Компани"
+  },
+  "footer.company_name": {
+    "ko": "BSH 인터내셔널 주식회사",
+    "en": "BSH International Co., Ltd.",
+    "ja": "BSH International Co., Ltd.",
+    "zh": "BSH International Co., Ltd.",
+    "mn": "BSH International Co., Ltd."
+  },
+  "footer.company_type": {
+    "ko": "종합 컨설팅 · 의료관광·수출지원·경영코칭",
+    "en": "Comprehensive consulting · Medical, Export & Coaching",
+    "ja": "総合コンサルティング · 医療・輸出・コーチング",
+    "zh": "综合咨询 · 医疗·出口·教练",
+    "mn": "Иж бүрэн зөвлөгөө · Эмнэлэг, Экспорт, Коучинг"
+  },
+  "footer.company_addr": {
+    "ko": "서울특별시 마포구",
+    "en": "Mapo-gu, Seoul, Republic of Korea",
+    "ja": "ソウル特別市 麻浦区",
+    "zh": "韩国首尔麻浦区",
+    "mn": "БНСУ, Сөүл, Мапо дүүрэг"
+  },
+  "footer.company_reg": {
+    "ko": "사업자등록번호 180-88-03539",
+    "en": "Business Reg. No. 180-88-03539",
+    "ja": "事業者登録番号 180-88-03539",
+    "zh": "营业执照号 180-88-03539",
+    "mn": "Бизнес бүртгэлийн дугаар 180-88-03539"
+  },
+  "footer.explore_h": {
+    "ko": "바로가기",
+    "en": "Explore",
+    "ja": "メニュー",
+    "zh": "快速链接",
+    "mn": "Цэс"
+  },
+  "footer.biz_h": {
+    "ko": "사업영역",
+    "en": "Business areas",
+    "ja": "事業領域",
+    "zh": "业务领域",
+    "mn": "Үйл ажиллагаа"
+  },
+  "footer.contact_h": {
+    "ko": "문의",
+    "en": "Get in touch",
+    "ja": "お問い合わせ",
+    "zh": "联系方式",
+    "mn": "Холбоо барих"
+  },
+  "footer.langs": {
+    "ko": "상담 언어: 한·영·일·중·몽",
+    "en": "Languages: KO · EN · JP · CN · MN",
+    "ja": "対応言語: 韓·英·日·中·モンゴル",
+    "zh": "咨询语言: 韩·英·日·中·蒙",
+    "mn": "Хэл: Солонгос · Англи · Япон · Хятад · Монгол"
+  },
+  "footer.bottom_note": {
+    "ko": "보건복지부 외국인환자 유치업 등록",
+    "en": "Registered foreign-patient agency · Ministry of Health & Welfare, Korea",
+    "ja": "保健福祉部 外国人患者誘致業 登録",
+    "zh": "韩国保健福祉部 外国患者引进机构注册",
+    "mn": "БНСУ-ын ЭМЯ-нд бүртгэлтэй гадаад өвчтөн урих байгууллага"
+  },
+  "home.title": {
+    "ko": "BSH International — 사람과 산업, 국경을 잇다",
+    "en": "BSH International — Connecting people, industry and borders",
+    "ja": "BSH International — 人と産業、国境をつなぐ",
+    "zh": "BSH International — 连接人、产业与国界",
+    "mn": "BSH International — Хүн, үйлдвэр, хил хязгаарыг холбоно"
+  },
+  "home.hero_eyebrow": {
+    "ko": "종합 컨설팅 · GLOBAL HUB",
+    "en": "Comprehensive consulting · GLOBAL HUB",
+    "ja": "総合コンサルティング · GLOBAL HUB",
+    "zh": "综合咨询 · GLOBAL HUB",
+    "mn": "Иж бүрэн зөвлөгөө · GLOBAL HUB"
+  },
+  "home.hero_h1": {
+    "ko": "사람과 산업, 국경을 연결하여 함께 성장합니다.",
+    "en": "Connecting people, industry and borders — growing together.",
+    "ja": "人と産業、国境をつなぎ、ともに成長します。",
+    "zh": "连接人、产业与国界，共同成长。",
+    "mn": "Хүн, үйлдвэр, хил хязгаарыг холбож хамтдаа өсдөг."
+  },
+  "home.hero_lead": {
+    "ko": "BSH International은 의료, 글로벌 비즈니스, 경영 교육을 아우르는 종합 컨설팅 기업입니다. 상담학 박사와 경영학 박사의 전문성을 바탕으로 외국인 환자 유치부터 한국 중소기업의 해외 진출, 경영·리더십 코칭까지 신뢰할 수 있는 파트너가 되겠습니다.",
+    "en": "BSH International is a comprehensive consulting firm spanning healthcare, global business and management education. Backed by doctorates in counseling and business administration, we are a trusted partner — from international patient coordination to helping Korean SMEs go global, to management and leadership coaching.",
+    "ja": "BSH Internationalは、医療・グローバルビジネス・経営教育を網羅する総合コンサルティング企業です。カウンセリング学博士と経営学博士の専門性を基盤に、外国人患者の誘致から韓国中小企業の海外進出支援、経営・リーダーシップコーチングまで、信頼できるパートナーを目指します。",
+    "zh": "BSH International 是一家涵盖医疗、全球商务与管理教育的综合咨询企业。我们以咨询学博士与管理学博士的专业为基础，从外国患者引进、协助韩国中小企业出海，到管理与领导力教练，成为您值得信赖的伙伴。",
+    "mn": "BSH International нь эрүүл мэнд, олон улсын бизнес, менежментийн боловсролыг хамарсан иж бүрэн зөвлөх компани юм. Сэтгэл зүйн зөвлөгөө болон бизнесийн удирдлагын докторын мэдлэгт тулгуурлан гадаад өвчтөн урихаас эхлээд Солонгосын жижиг дунд бизнесийг гадаад зах зээлд гаргах, менежмент, манлайллын коучинг хүртэл найдвартай түнш болно."
+  },
+  "home.hero_cta1": {
+    "ko": "상담 신청",
+    "en": "Get started",
+    "ja": "相談予約",
+    "zh": "预约咨询",
+    "mn": "Зөвлөгөө авах"
+  },
+  "home.hero_cta2": {
+    "ko": "사업영역 보기",
+    "en": "Our business areas",
+    "ja": "事業領域を見る",
+    "zh": "查看业务领域",
+    "mn": "Үйл ажиллагаа үзэх"
+  },
+  "home.values_eyebrow": {
+    "ko": "핵심 가치",
+    "en": "Core values",
+    "ja": "コアバリュー",
+    "zh": "核心价值",
+    "mn": "Үндсэн үнэт зүйлс"
+  },
+  "home.value1_t": {
+    "ko": "신뢰 (Trust)",
+    "en": "Trust",
+    "ja": "信頼 (Trust)",
+    "zh": "信任 (Trust)",
+    "mn": "Итгэл (Trust)"
+  },
+  "home.value1_d": {
+    "ko": "전문성과 정직함을 바탕으로 한 서비스로 고객의 믿음에 보답합니다.",
+    "en": "Service grounded in expertise and integrity, earning every client's trust.",
+    "ja": "専門性と誠実さに基づくサービスで、お客様の信頼にお応えします。",
+    "zh": "以专业与诚信为本的服务，回报客户的信赖。",
+    "mn": "Мэргэжлийн ур чадвар, шударга байдалд тулгуурласан үйлчилгээгээр үйлчлүүлэгчийн итгэлийг хариулна."
+  },
+  "home.value2_t": {
+    "ko": "연결 (Connection)",
+    "en": "Connection",
+    "ja": "つながり (Connection)",
+    "zh": "连接 (Connection)",
+    "mn": "Холболт (Connection)"
+  },
+  "home.value2_d": {
+    "ko": "사람, 기업, 시장을 잇는 가교 역할로 새로운 기회를 만듭니다.",
+    "en": "A bridge linking people, companies and markets to create new opportunities.",
+    "ja": "人・企業・市場をつなぐ架け橋となり、新たな機会を生み出します。",
+    "zh": "作为连接人、企业与市场的桥梁，创造新的机会。",
+    "mn": "Хүн, компани, зах зээлийг холбосон гүүр болж шинэ боломжуудыг бий болгоно."
+  },
+  "home.value3_t": {
+    "ko": "성장 (Growth)",
+    "en": "Growth",
+    "ja": "成長 (Growth)",
+    "zh": "成长 (Growth)",
+    "mn": "Өсөлт (Growth)"
+  },
+  "home.value3_d": {
+    "ko": "개인과 기업이 함께 발전하는 파트너십을 추구합니다.",
+    "en": "A partnership in which individuals and companies advance together.",
+    "ja": "個人と企業がともに発展するパートナーシップを追求します。",
+    "zh": "追求个人与企业共同发展的伙伴关系。",
+    "mn": "Хувь хүн, компани хамтдаа хөгжих түншлэлийг эрхэмлэнэ."
+  },
+  "home.biz_eyebrow": {
+    "ko": "사업영역",
+    "en": "Business areas",
+    "ja": "事業領域",
+    "zh": "业务领域",
+    "mn": "Үйл ажиллагаа"
+  },
+  "home.biz_h2": {
+    "ko": "하나의 신뢰, 세 가지 사업.",
+    "en": "One trust, three businesses.",
+    "ja": "ひとつの信頼、三つの事業。",
+    "zh": "一份信任，三大业务。",
+    "mn": "Нэг итгэл, гурван чиглэл."
+  },
+  "home.biz1_k": {
+    "ko": "사업 01",
+    "en": "Business 01",
+    "ja": "事業 01",
+    "zh": "业务 01",
+    "mn": "Чиглэл 01"
+  },
+  "home.biz1_t": {
+    "ko": "외국인환자 유치",
+    "en": "Medical Tourism",
+    "ja": "外国人患者誘致",
+    "zh": "外国患者引进",
+    "mn": "Гадаад өвчтөн урих"
+  },
+  "home.biz1_d": {
+    "ko": "해외 환자를 한국 우수 의료기관에 연결하고, 통역·코디네이션·사후관리까지 원스톱으로 지원합니다.",
+    "en": "Connecting overseas patients with Korea's leading hospitals — with one-stop interpretation, coordination and follow-up care.",
+    "ja": "海外の患者を韓国の優秀な医療機関につなぎ、通訳・コーディネーション・アフターケアまでワンストップで支援します。",
+    "zh": "将海外患者对接韩国优秀医疗机构，并提供翻译、协调到术后管理的一站式支持。",
+    "mn": "Гадаадын өвчтнийг Солонгосын шилдэг эмнэлэгтэй холбож, орчуулга, зохицуулалт, дараах үйлчилгээг нэг цэгээс үзүүлнэ."
+  },
+  "home.biz2_k": {
+    "ko": "사업 02",
+    "en": "Business 02",
+    "ja": "事業 02",
+    "zh": "业务 02",
+    "mn": "Чиглэл 02"
+  },
+  "home.biz2_t": {
+    "ko": "해외사업·수출지원",
+    "en": "Export Support",
+    "ja": "輸出支援",
+    "zh": "出口支持",
+    "mn": "Экспортын дэмжлэг"
+  },
+  "home.biz2_d": {
+    "ko": "한국 중소기업의 우수한 IT 부품·화장품·식품을 해외 시장에 알리고 실질적인 수출 성과로 이어드립니다.",
+    "en": "Bringing Korean SMEs' IT components, cosmetics and food to global markets — and turning them into real export results.",
+    "ja": "韓国中小企業の優れたIT部品・化粧品・食品を海外市場へ広め、実際の輸出成果につなげます。",
+    "zh": "将韩国中小企业优质的IT零部件、化妆品与食品推向海外市场，转化为实际出口成果。",
+    "mn": "Солонгосын жижиг дунд бизнесийн чанартай IT эд анги, гоо сайхан, хүнсийг гадаад зах зээлд таниулж бодит экспортын үр дүнд хүргэнэ."
+  },
+  "home.biz3_k": {
+    "ko": "사업 03",
+    "en": "Business 03",
+    "ja": "事業 03",
+    "zh": "业务 03",
+    "mn": "Чиглэл 03"
+  },
+  "home.biz3_t": {
+    "ko": "경영·코칭 컨설팅",
+    "en": "Management & Coaching",
+    "ja": "経営・コーチング",
+    "zh": "管理与教练咨询",
+    "mn": "Менежмент ба коучинг"
+  },
+  "home.biz3_d": {
+    "ko": "경영학·상담심리학 박사의 전문성으로 기업에는 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 제공합니다.",
+    "en": "With doctorates in business and counseling psychology, we deliver management solutions to companies and life-and-career change to individuals.",
+    "ja": "経営学・カウンセリング心理学博士の専門性で、企業には経営ソリューションを、個人には人生とキャリアの変化を提供します。",
+    "zh": "以管理学与咨询心理学博士的专业，为企业提供管理方案，为个人带来人生与职业的转变。",
+    "mn": "Бизнес болон сэтгэл зүйн зөвлөгөөний докторын мэдлэгээр компанид менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг авчирна."
+  },
+  "home.biz_link": {
+    "ko": "자세히 보기",
+    "en": "Learn more",
+    "ja": "詳しく見る",
+    "zh": "了解更多",
+    "mn": "Дэлгэрэнгүй"
+  },
+  "home.ceo_eyebrow": {
+    "ko": "대표이사 인사말",
+    "en": "CEO message",
+    "ja": "代表挨拶",
+    "zh": "总裁致辞",
+    "mn": "Захирлын мэндчилгээ"
+  },
+  "home.ceo_quote": {
+    "ko": "“사람의 마음을 헤아리는 상담가의 시선과, 비즈니스를 성장시키는 경영자의 전문성. 이 두 가지로 한국과 세계를 잇는 신뢰의 다리가 되겠습니다.”",
+    "en": "“The empathy of a counselor who understands the human heart, and the expertise of a leader who grows a business — with both, we will be a bridge of trust between Korea and the world.”",
+    "ja": "「人の心を汲み取るカウンセラーの視点と、ビジネスを成長させる経営者の専門性。この二つで韓国と世界をつなぐ信頼の架け橋となります。」",
+    "zh": "“以理解人心的咨询师视角，与让事业成长的经营者专业，搭建连接韩国与世界的信任之桥。”",
+    "mn": "«Хүний сэтгэлийг ойлгох зөвлөхийн харц, бизнесийг өсгөх удирдагчийн мэргэжил — энэ хоёроор Солонгос болон дэлхийг холбосон итгэлийн гүүр болно.»"
+  },
+  "home.ceo_link": {
+    "ko": "인사말 전문 보기",
+    "en": "Read the full message",
+    "ja": "挨拶全文を読む",
+    "zh": "阅读完整致辞",
+    "mn": "Бүрэн уншихыг"
+  },
+  "home.cta_eyebrow": {
+    "ko": "함께 시작하기",
+    "en": "Get started",
+    "ja": "はじめる",
+    "zh": "开始合作",
+    "mn": "Эхлэх"
+  },
+  "home.cta_h2": {
+    "ko": "신뢰로 잇는 파트너십, 지금 문의하세요.",
+    "en": "A partnership built on trust — reach out today.",
+    "ja": "信頼でつなぐパートナーシップ、今すぐお問い合わせを。",
+    "zh": "以信任连接的伙伴关系，即刻咨询。",
+    "mn": "Итгэлд тулгуурласан түншлэл — яг одоо холбогдоорой."
+  },
+  "home.cta_lead": {
+    "ko": "의료관광, 수출지원, 경영·코칭 — 어떤 분야든 다국어 상담으로 가장 적합한 길을 안내해 드립니다.",
+    "en": "Medical tourism, export support, or coaching — whatever you need, our multilingual team will guide you to the best path.",
+    "ja": "医療ツーリズム、輸出支援、経営・コーチング — どの分野でも多言語相談で最適な道をご案内します。",
+    "zh": "医疗旅游、出口支持或管理教练——无论哪个领域，我们都以多语言咨询为您指引最合适的方向。",
+    "mn": "Эмнэлгийн аялал, экспортын дэмжлэг, коучинг — аль ч чиглэлд олон хэлээр зөвлөж хамгийн тохиромжтой замыг зааж өгнө."
+  },
+  "about.title": {
+    "ko": "회사 소개 — BSH International",
+    "en": "About — BSH International",
+    "ja": "会社概要 — BSH International",
+    "zh": "公司介绍 — BSH International",
+    "mn": "Бидний тухай — BSH International"
+  },
+  "about.hero_eyebrow": {
+    "ko": "회사 소개",
+    "en": "About BSH",
+    "ja": "会社概要",
+    "zh": "公司介绍",
+    "mn": "Бидний тухай"
+  },
+  "about.hero_h1": {
+    "ko": "신뢰로 잇는 사람과 산업, BSH.",
+    "en": "People and industry, connected by trust — BSH.",
+    "ja": "信頼でつなぐ人と産業、BSH。",
+    "zh": "以信任连接人与产业，BSH。",
+    "mn": "Итгэлээр холбосон хүн ба үйлдвэр, BSH."
+  },
+  "about.hero_lead": {
+    "ko": "BSH International Co., Ltd.는 의료, 글로벌 비즈니스, 경영 교육을 아우르는 종합 컨설팅 기업입니다. 상담학 박사와 경영학 박사 학위를 겸비한 전문성을 바탕으로 외국인 환자 유치, 한국 중소기업의 해외 진출 지원, 경영·리더십 코칭까지 폭넓은 영역에서 신뢰할 수 있는 파트너 역할을 합니다.",
+    "en": "BSH International Co., Ltd. is a comprehensive consulting firm spanning healthcare, global business and management education. Backed by doctorates in counseling and business administration, we serve as a trusted partner across a broad range — from international patient coordination and Korean SME export support to management and leadership coaching.",
+    "ja": "BSH International Co., Ltd.は、医療・グローバルビジネス・経営教育を網羅する総合コンサルティング企業です。カウンセリング学博士と経営学博士の専門性を基盤に、外国人患者の誘致、韓国中小企業の海外進出支援、経営・リーダーシップコーチングまで幅広い領域で信頼できるパートナーの役割を果たします。",
+    "zh": "BSH International Co., Ltd. 是一家涵盖医疗、全球商务与管理教育的综合咨询企业。我们以咨询学博士与管理学博士的专业为基础，在外国患者引进、韩国中小企业出海支持、管理与领导力教练等广泛领域，担任值得信赖的伙伴。",
+    "mn": "BSH International Co., Ltd. нь эрүүл мэнд, олон улсын бизнес, менежментийн боловсролыг хамарсан иж бүрэн зөвлөх компани юм. Сэтгэл зүйн зөвлөгөө болон бизнесийн удирдлагын докторын мэдлэгт тулгуурлан гадаад өвчтөн урих, Солонгосын жижиг дунд бизнесийн экспортын дэмжлэг, менежмент, манлайллын коучинг хүртэл өргөн чиглэлд найдвартай түнш болдог."
+  },
+  "about.vision_eyebrow": {
+    "ko": "비전",
+    "en": "Our vision",
+    "ja": "ビジョン",
+    "zh": "愿景",
+    "mn": "Алсын хараа"
+  },
+  "about.vision_h2": {
+    "ko": "사람과 산업, 국경을 연결하여 함께 성장하는 글로벌 허브가 되겠습니다.",
+    "en": "To become a global hub that connects people, industry and borders to grow together.",
+    "ja": "人と産業、国境をつなぎ、ともに成長するグローバルハブを目指します。",
+    "zh": "成为连接人、产业与国界、共同成长的全球枢纽。",
+    "mn": "Хүн, үйлдвэр, хил хязгаарыг холбож хамтдаа өсдөг дэлхийн төв болно."
+  },
+  "about.vision_d": {
+    "ko": "우리는 한국이 가진 우수한 의료 기술과 제품, 그리고 사람을 세계와 연결합니다. 1차적으로 일본·몽골·중국을 중심으로, 향후 아시아 전역과 세계 시장으로 신뢰의 네트워크를 확장해 나갑니다.",
+    "en": "We connect Korea's excellent medical technology, products and people to the world. Beginning with Japan, Mongolia and China, we are expanding a network of trust across Asia and global markets.",
+    "ja": "私たちは韓国が持つ優れた医療技術・製品・人を世界とつなぎます。まずは日本・モンゴル・中国を中心に、今後はアジア全域と世界市場へ信頼のネットワークを広げます。",
+    "zh": "我们将韩国卓越的医疗技术、产品与人才连接至世界。首先以日本、蒙古、中国为中心，未来向亚洲全域乃至全球市场拓展信任网络。",
+    "mn": "Бид Солонгосын шилдэг эмнэлгийн технологи, бүтээгдэхүүн, хүмүүсийг дэлхийтэй холбоно. Эхлээд Япон, Монгол, Хятадыг түшиглэн, цаашид Ази даяар болон дэлхийн зах зээлд итгэлийн сүлжээгээ тэлнэ."
+  },
+  "about.values_eyebrow": {
+    "ko": "핵심 가치",
+    "en": "Core values",
+    "ja": "コアバリュー",
+    "zh": "核心价值",
+    "mn": "Үндсэн үнэт зүйлс"
+  },
+  "about.overview_eyebrow": {
+    "ko": "기관 개요",
+    "en": "Company overview",
+    "ja": "会社概要",
+    "zh": "公司概况",
+    "mn": "Компанийн танилцуулга"
+  },
+  "about.ov_name_h": {
+    "ko": "기관명",
+    "en": "Company",
+    "ja": "会社名",
+    "zh": "公司名称",
+    "mn": "Нэр"
+  },
+  "about.ov_type_h": {
+    "ko": "기관 유형",
+    "en": "Type",
+    "ja": "種別",
+    "zh": "类型",
+    "mn": "Төрөл"
+  },
+  "about.ov_type_v": {
+    "ko": "종합 컨설팅 · 외국인환자 유치업체(에이전시)",
+    "en": "Comprehensive consulting · Foreign-patient attraction agency",
+    "ja": "総合コンサルティング · 外国人患者誘致業(エージェンシー)",
+    "zh": "综合咨询 · 外国患者引进机构（代理）",
+    "mn": "Иж бүрэн зөвлөгөө · Гадаад өвчтөн урих агентлаг"
+  },
+  "about.ov_loc_h": {
+    "ko": "소재지",
+    "en": "Location",
+    "ja": "所在地",
+    "zh": "地址",
+    "mn": "Байршил"
+  },
+  "about.ov_loc_v": {
+    "ko": "서울특별시 마포구",
+    "en": "Mapo-gu, Seoul, Republic of Korea",
+    "ja": "ソウル特別市 麻浦区",
+    "zh": "韩国首尔麻浦区",
+    "mn": "БНСУ, Сөүл, Мапо дүүрэг"
+  },
+  "about.ov_found_h": {
+    "ko": "설립연도",
+    "en": "Founded",
+    "ja": "設立年度",
+    "zh": "成立年份",
+    "mn": "Байгуулагдсан"
+  },
+  "about.ov_found_v": {
+    "ko": "2026년 3월",
+    "en": "March 2026",
+    "ja": "2026年3月",
+    "zh": "2026年3月",
+    "mn": "2026 оны 3 сар"
+  },
+  "about.ov_ceo_h": {
+    "ko": "대표자",
+    "en": "CEO",
+    "ja": "代表者",
+    "zh": "代表",
+    "mn": "Захирал"
+  },
+  "about.ov_contact_h": {
+    "ko": "연락처",
+    "en": "Contact",
+    "ja": "連絡先",
+    "zh": "联系方式",
+    "mn": "Холбоо барих"
+  },
+  "about.ov_reg_h": {
+    "ko": "사업자등록번호",
+    "en": "Business Reg. No.",
+    "ja": "事業者登録番号",
+    "zh": "营业执照号",
+    "mn": "Бизнес бүртгэлийн дугаар"
+  },
+  "about.ceo_eyebrow": {
+    "ko": "대표이사 인사말",
+    "en": "CEO message",
+    "ja": "代表挨拶",
+    "zh": "总裁致辞",
+    "mn": "Захирлын мэндчилгээ"
+  },
+  "about.ceo_h2": {
+    "ko": "한국과 세계를 잇는 신뢰의 다리가 되겠습니다.",
+    "en": "A bridge of trust between Korea and the world.",
+    "ja": "韓国と世界をつなぐ信頼の架け橋となります。",
+    "zh": "成为连接韩国与世界的信任之桥。",
+    "mn": "Солонгос болон дэлхийг холбосон итгэлийн гүүр болно."
+  },
+  "about.ceo_p1": {
+    "ko": "안녕하십니까, BSH International Co., Ltd. 대표이사입니다.",
+    "en": "Hello, I am the CEO of BSH International Co., Ltd.",
+    "ja": "こんにちは。BSH International Co., Ltd. 代表取締役です。",
+    "zh": "您好，我是 BSH International Co., Ltd. 的总裁。",
+    "mn": "Сайн байна уу, би BSH International Co., Ltd.-ийн захирал байна."
+  },
+  "about.ceo_p2": {
+    "ko": "저는 오랜 시간 사람의 마음을 이해하는 상담심리학과, 조직과 시장을 움직이는 경영학을 함께 공부해왔습니다. 이 두 가지 배움은 저에게 하나의 질문으로 이어졌습니다. “사람과 사람, 나라와 나라가 진정으로 신뢰하며 함께 성장하려면 무엇이 필요할까?”",
+    "en": "For many years I have studied both counseling psychology — understanding the human heart — and business administration — moving organizations and markets. These two pursuits led me to a single question: “What does it take for people and nations to truly trust one another and grow together?”",
+    "ja": "私は長い間、人の心を理解するカウンセリング心理学と、組織と市場を動かす経営学を共に学んできました。この二つの学びは、私に一つの問いをもたらしました。「人と人、国と国が本当に信頼し合い、ともに成長するには何が必要だろうか」",
+    "zh": "长久以来，我同时研习理解人心的咨询心理学，与驱动组织和市场的管理学。这两门学问引向同一个问题：“人与人、国与国，若要真正彼此信任、共同成长，需要什么？”",
+    "mn": "Би удаан хугацаанд хүний сэтгэлийг ойлгох сэтгэл зүйн зөвлөгөө, мөн байгууллага, зах зээлийг хөдөлгөх бизнесийн удирдлагыг хамт суралцсан. Энэ хоёр сургалт намайг нэг асуултад хүргэв: «Хүн хүнтэйгээ, улс улстайгаа үнэхээр итгэлцэж хамтдаа өсөхийн тулд юу хэрэгтэй вэ?»"
+  },
+  "about.ceo_p3": {
+    "ko": "그 답을 찾아가는 과정에서 BSH International 주식회사를 세워 그 출발을 하였습니다.",
+    "en": "In the journey to find that answer, I founded BSH International Co., Ltd. as a starting point.",
+    "ja": "その答えを探す過程で、BSH International株式会社を設立し、第一歩を踏み出しました。",
+    "zh": "在寻找答案的过程中，我创立了 BSH International 株式会社，迈出第一步。",
+    "mn": "Тэр хариултыг хайх замдаа BSH International компанийг үүсгэн байгуулж эхлэлээ тавьсан."
+  },
+  "about.ceo_p4": {
+    "ko": "한국은 세계가 인정하는 의료 기술과 정성스러운 진료 문화를 가지고 있습니다. 또한 IT, 화장품, 식품 등 다양한 분야에서 우수한 제품을 만들어내는 많은 중소기업들이 있습니다. 저는 이 소중한 가치들이 한국 안에만 머물지 않고, 아시아를 비롯한 세계 곳곳의 더 많은 사람들에게 닿기를 바라는 마음으로 이 길을 걷고 있습니다.",
+    "en": "Korea has world-renowned medical technology and a caring culture of treatment. It is also home to many small and medium enterprises that create outstanding products in IT, cosmetics, food and more. I walk this path hoping these precious values will not remain only within Korea, but reach more people across Asia and around the world.",
+    "ja": "韓国は世界が認める医療技術と、真心のこもった診療文化を持っています。またIT、化粧品、食品など多様な分野で優れた製品を生み出す多くの中小企業があります。私は、この大切な価値が韓国の中だけにとどまらず、アジアをはじめ世界各地のより多くの人々に届くことを願い、この道を歩んでいます。",
+    "zh": "韩国拥有举世公认的医疗技术与用心的诊疗文化，也有众多在IT、化妆品、食品等领域创造优秀产品的中小企业。我怀着让这些珍贵价值不止停留在韩国、而能抵达亚洲乃至世界各地更多人的心愿，走在这条路上。",
+    "mn": "Солонгос дэлхийд хүлээн зөвшөөрөгдсөн эмнэлгийн технологи, халамжтай эмчилгээний соёлтой. Мөн IT, гоо сайхан, хүнс зэрэг олон салбарт шилдэг бүтээгдэхүүн бүтээдэг олон жижиг дунд бизнес бий. Би эдгээр үнэт зүйлс зөвхөн Солонгост үлдэхгүй, Ази болон дэлхийн өнцөг булан бүрийн илүү олон хүнд хүрээсэй гэж хүсэн энэ замаар явж байна."
+  },
+  "about.ceo_p5": {
+    "ko": "해외에서 한국을 찾는 환자분들께는 믿을 수 있는 의료진과 따뜻한 동행을, 좋은 제품을 만들어온 한국의 중소기업들에게는 세계로 나아가는 든든한 다리가 되어드리고자 합니다. 그리고 그 모든 과정에서, 서로가 손해 보지 않고 함께 웃을 수 있는 진정한 상생(win-win)을 만들어가는 것이 저와 BSH International이 변함없이 지키고자 하는 약속입니다.",
+    "en": "For patients who come to Korea from abroad, we offer trustworthy medical teams and warm companionship; for Korea's SMEs with great products, we aim to be a solid bridge to the world. And throughout, creating a genuine win-win — where everyone benefits and shares the joy — is the promise BSH International will always keep.",
+    "ja": "海外から韓国を訪れる患者の皆様には信頼できる医療陣と温かい同行を、優れた製品を作ってきた韓国の中小企業には世界へ進む頼もしい架け橋となることを目指します。そしてそのすべての過程で、互いに損をせずともに笑える真のwin-winを築くことが、私とBSH Internationalが変わらず守りたい約束です。",
+    "zh": "对从海外来到韩国的患者，我们提供值得信赖的医疗团队与温暖陪伴；对打造优质产品的韩国中小企业，我们愿成为通向世界的坚实桥梁。在这一切过程中，营造彼此不受损、共同欢笑的真正双赢，是我与 BSH International 始终坚守的承诺。",
+    "mn": "Гадаадаас Солонгост ирэх өвчтнүүдэд найдвартай эмч нар, дулаахан хамтрагч болж, чанартай бүтээгдэхүүн бүтээсэн Солонгосын жижиг дунд бизнест дэлхийд гарах бат гүүр болохыг зорьж байна. Энэ бүх явцад хэн нь ч хохирохгүй, хамтдаа инээх жинхэнэ win-win байдлыг бүтээх нь миний болон BSH International-ийн үргэлж сахих амлалт юм."
+  },
+  "about.ceo_p6": {
+    "ko": "사람의 마음을 헤아리는 상담가의 시선과, 비즈니스를 성장시키는 경영자의 전문성. 이 두 가지를 가지고 한국과 세계를 잇는 신뢰의 다리가 되겠습니다. 앞으로도 한 분 한 분, 한 기업 한 기업과 진심으로 동행하겠습니다.",
+    "en": "With the empathy of a counselor who reads the human heart, and the expertise of a leader who grows a business, we will be a bridge of trust between Korea and the world — walking sincerely alongside each person and each company.",
+    "ja": "人の心を汲み取るカウンセラーの視点と、ビジネスを成長させる経営者の専門性。この二つを携え、韓国と世界をつなぐ信頼の架け橋となります。これからも一人ひとり、一社一社と心から同行いたします。",
+    "zh": "以体察人心的咨询师视角，与让事业成长的经营者专业，搭建连接韩国与世界的信任之桥。今后也将与每一位、每一家企业真诚同行。",
+    "mn": "Хүний сэтгэлийг ойлгох зөвлөхийн харц, бизнесийг өсгөх удирдагчийн мэргэжлийг хослуулан Солонгос болон дэлхийг холбосон итгэлийн гүүр болно. Цаашид ч нэг бүрийнх нь, компани бүрийнх нь хамт чин сэтгэлээсээ алхах болно."
+  },
+  "about.ceo_p7": {
+    "ko": "감사합니다.",
+    "en": "Thank you.",
+    "ja": "ありがとうございます。",
+    "zh": "谢谢。",
+    "mn": "Баярлалаа."
+  },
+  "about.ceo_sign": {
+    "ko": "BSH International Co., Ltd. 대표이사",
+    "en": "CEO, BSH International Co., Ltd.",
+    "ja": "BSH International Co., Ltd. 代表取締役",
+    "zh": "BSH International Co., Ltd. 总裁",
+    "mn": "BSH International Co., Ltd.-ийн захирал"
+  },
+  "about.profile_eyebrow": {
+    "ko": "대표이사 소개",
+    "en": "CEO profile",
+    "ja": "代表者紹介",
+    "zh": "总裁简介",
+    "mn": "Захирлын танилцуулга"
+  },
+  "about.pf_deg_h": {
+    "ko": "학위",
+    "en": "Degrees",
+    "ja": "学位",
+    "zh": "学位",
+    "mn": "Зэрэг"
+  },
+  "about.pf_deg1": {
+    "ko": "경영학 박사 (Ph.D. in Business Administration)",
+    "en": "Ph.D. in Business Administration",
+    "ja": "経営学博士 (Ph.D. in Business Administration)",
+    "zh": "管理学博士 (Ph.D. in Business Administration)",
+    "mn": "Бизнесийн удирдлагын доктор (Ph.D. in Business Administration)"
+  },
+  "about.pf_deg2": {
+    "ko": "상담심리학 박사 (Ph.D. in Counseling Psychology)",
+    "en": "Ph.D. in Counseling Psychology",
+    "ja": "カウンセリング心理学博士 (Ph.D. in Counseling Psychology)",
+    "zh": "咨询心理学博士 (Ph.D. in Counseling Psychology)",
+    "mn": "Зөвлөгөөний сэтгэл судлалын доктор (Ph.D. in Counseling Psychology)"
+  },
+  "about.pf_field_h": {
+    "ko": "전문분야",
+    "en": "Specialties",
+    "ja": "専門分野",
+    "zh": "专业领域",
+    "mn": "Мэргэшсэн чиглэл"
+  },
+  "about.pf_field_v": {
+    "ko": "글로벌 헬스케어 컨설팅, 해외 비즈니스 컨설팅, 경영·리더십 코칭",
+    "en": "Global healthcare consulting, overseas business consulting, management & leadership coaching",
+    "ja": "グローバルヘルスケアコンサルティング、海外ビジネスコンサルティング、経営・リーダーシップコーチング",
+    "zh": "全球医疗咨询、海外商务咨询、管理与领导力教练",
+    "mn": "Дэлхийн эрүүл мэндийн зөвлөгөө, гадаад бизнесийн зөвлөгөө, менежмент ба манлайллын коучинг"
+  },
+  "about.pf_core_h": {
+    "ko": "핵심역량",
+    "en": "Core strength",
+    "ja": "コア・コンピタンス",
+    "zh": "核心能力",
+    "mn": "Гол чадвар"
+  },
+  "about.pf_core_v": {
+    "ko": "사람에 대한 깊은 이해(상담심리)와 조직·시장에 대한 전문성(경영학)을 결합한 통합적 컨설팅",
+    "en": "Integrated consulting that combines deep understanding of people (counseling psychology) with expertise in organizations and markets (business administration)",
+    "ja": "人への深い理解(カウンセリング心理)と、組織・市場への専門性(経営学)を結合した統合的コンサルティング",
+    "zh": "将对人的深刻理解（咨询心理）与对组织、市场的专业（管理学）相结合的整合式咨询",
+    "mn": "Хүний гүн ойлголт (сэтгэл зүйн зөвлөгөө) болон байгууллага, зах зээлийн мэргэжил (бизнесийн удирдлага)-ийг хослуулсан нэгдсэн зөвлөгөө"
+  },
+  "about.pf_note": {
+    "ko": "※ 상세 경력, 학력, 자격사항 등은 추가 정보 제공 시 보강될 예정입니다.",
+    "en": "※ Detailed career, education and qualifications will be added as further information becomes available.",
+    "ja": "※ 詳細な経歴・学歴・資格などは、追加情報の提供時に拡充される予定です。",
+    "zh": "※ 详细履历、学历与资质等将在补充信息后完善。",
+    "mn": "※ Дэлгэрэнгүй ажлын туршлага, боловсрол, мэргэшил зэргийг нэмэлт мэдээлэл ирэхэд баяжуулна."
+  },
+  "about.cta_h2": {
+    "ko": "함께할 의료기관·기업·파트너를 찾고 있습니다.",
+    "en": "We're looking for partner hospitals, companies and agents.",
+    "ja": "ともに歩む医療機関・企業・パートナーを探しています。",
+    "zh": "我们正在寻找合作的医疗机构、企业与伙伴。",
+    "mn": "Хамтран ажиллах эмнэлэг, компани, түншүүдийг хайж байна."
+  },
+  "medical.title": {
+    "ko": "외국인환자 유치 — BSH International",
+    "en": "Medical Tourism — BSH International",
+    "ja": "医療ツーリズム — BSH International",
+    "zh": "医疗旅游 — BSH International",
+    "mn": "Эмнэлгийн аялал — BSH International"
+  },
+  "medical.hero_eyebrow": {
+    "ko": "외국인환자 유치",
+    "en": "Medical Tourism",
+    "ja": "外国人患者誘致",
+    "zh": "外国患者引进",
+    "mn": "Гадаад өвчтөн урих"
+  },
+  "medical.hero_h1": {
+    "ko": "입국부터 귀국까지, 신뢰 기반의 원스톱 의료 여정.",
+    "en": "A trust-based, one-stop medical journey — from arrival to return.",
+    "ja": "入国から帰国まで、信頼に基づくワンストップの医療の旅。",
+    "zh": "从入境到回国，以信任为本的一站式就医之旅。",
+    "mn": "Ирэхээс буцах хүртэл итгэлд тулгуурласан нэг цэгийн эмнэлгийн аялал."
+  },
+  "medical.hero_lead": {
+    "ko": "해외 환자를 한국의 우수 의료기관에 연결하고, 통역·의료 코디네이션·체류 지원·사후관리까지 책임집니다. 외국인환자 유치 의료기관 등록을 기반으로 전문적이고 안전한 서비스를 제공합니다.",
+    "en": "We connect overseas patients with Korea's leading hospitals and take responsibility for interpretation, medical coordination, stay support and follow-up care — providing professional, safe service backed by official foreign-patient-attraction registration.",
+    "ja": "海外の患者を韓国の優秀な医療機関につなぎ、通訳・医療コーディネーション・滞在支援・アフターケアまで責任を持ちます。外国人患者誘致医療機関登録を基盤に、専門的で安全なサービスを提供します。",
+    "zh": "我们将海外患者对接韩国优秀医疗机构，并负责翻译、医疗协调、停留支持与术后管理。以外国患者引进机构注册为基础，提供专业、安全的服务。",
+    "mn": "Бид гадаадын өвчтнийг Солонгосын шилдэг эмнэлэгтэй холбож, орчуулга, эмнэлгийн зохицуулалт, оршин суух дэмжлэг, дараах үйлчилгээг хариуцна. Гадаад өвчтөн урих эмнэлгийн бүртгэлд тулгуурлан мэргэжлийн, аюулгүй үйлчилгээ үзүүлнэ."
+  },
+  "medical.svc_eyebrow": {
+    "ko": "핵심 서비스",
+    "en": "Core services",
+    "ja": "主なサービス",
+    "zh": "核心服务",
+    "mn": "Үндсэн үйлчилгээ"
+  },
+  "medical.svc1": {
+    "ko": "해외 환자를 위한 국내 의료기관 연계 및 진료 예약 지원",
+    "en": "Hospital matching and appointment booking for overseas patients",
+    "ja": "海外患者のための国内医療機関の連携と診療予約支援",
+    "zh": "为海外患者对接国内医疗机构并协助预约",
+    "mn": "Гадаад өвчтөнд зориулсан эмнэлэг сонгох, цаг захиалах дэмжлэг"
+  },
+  "medical.svc2": {
+    "ko": "통역, 의료 코디네이션, 체류 지원(숙박·이동 등) 서비스",
+    "en": "Interpretation, medical coordination and stay support (lodging, transport, etc.)",
+    "ja": "通訳、医療コーディネーション、滞在支援(宿泊・移動など)サービス",
+    "zh": "翻译、医疗协调及停留支持（住宿、出行等）服务",
+    "mn": "Орчуулга, эмнэлгийн зохицуулалт, оршин суух дэмжлэг (байр, унаа гэх мэт)"
+  },
+  "medical.svc3": {
+    "ko": "의료 상담 및 사후관리 프로그램 운영",
+    "en": "Medical consultation and follow-up care programs",
+    "ja": "医療相談およびアフターケアプログラムの運営",
+    "zh": "医疗咨询及术后管理项目运营",
+    "mn": "Эмнэлгийн зөвлөгөө болон дараах эмчилгээний хөтөлбөр"
+  },
+  "medical.svc4": {
+    "ko": "외국인환자 유치 의료기관 등록 기반의 전문적이고 안전한 서비스",
+    "en": "Professional, safe service backed by official foreign-patient-attraction registration",
+    "ja": "外国人患者誘致医療機関登録に基づく専門的で安全なサービス",
+    "zh": "以外国患者引进机构注册为基础的专业、安全服务",
+    "mn": "Гадаад өвчтөн урих эмнэлгийн бүртгэлд тулгуурласан мэргэжлийн, аюулгүй үйлчилгээ"
+  },
+  "medical.fields_eyebrow": {
+    "ko": "유치 분야",
+    "en": "Treatment fields",
+    "ja": "誘致分野",
+    "zh": "引进领域",
+    "mn": "Эмчилгээний чиглэл"
+  },
+  "medical.fields_h2": {
+    "ko": "한국이 가장 잘하는 분야에 집중합니다.",
+    "en": "Focused on what Korean medicine does best.",
+    "ja": "韓国が最も得意とする分野に集中します。",
+    "zh": "专注于韩国最擅长的领域。",
+    "mn": "Солонгосын хамгийн сайн чиглэлд төвлөрнө."
+  },
+  "medical.f1_t": {
+    "ko": "성형·피부과",
+    "en": "Plastic Surgery & Dermatology",
+    "ja": "美容外科・皮膚科",
+    "zh": "整形·皮肤科",
+    "mn": "Гоо засал ба арьс"
+  },
+  "medical.f1_d": {
+    "ko": "쌍꺼풀, 코 성형, 안면 윤곽, 지방흡입, 피부 레이저, 보톡스·필러 등.",
+    "en": "Double-eyelid, rhinoplasty, facial contouring, liposuction, skin laser, Botox & fillers.",
+    "ja": "二重まぶた、鼻整形、輪郭、脂肪吸引、皮膚レーザー、ボトックス・フィラーなど。",
+    "zh": "双眼皮、鼻整形、面部轮廓、吸脂、皮肤激光、肉毒素与填充等。",
+    "mn": "Зовхи, хамар засал, нүүрний хэлбэр, өөх соруулах, арьсны лазер, ботокс, филлер г.м."
+  },
+  "medical.f2_t": {
+    "ko": "건강검진",
+    "en": "Health Screening",
+    "ja": "健康診断",
+    "zh": "健康检查",
+    "mn": "Эрүүл мэндийн үзлэг"
+  },
+  "medical.f2_d": {
+    "ko": "종합 건강검진, 암 조기검진, 유전자 검사, 정밀 CT/MRI 검사 등.",
+    "en": "Comprehensive checkups, early cancer screening, genetic testing, precision CT/MRI.",
+    "ja": "総合健康診断、がん早期検診、遺伝子検査、精密CT/MRIなど。",
+    "zh": "综合体检、癌症早期筛查、基因检测、精密CT/MRI等。",
+    "mn": "Иж бүрэн үзлэг, хорт хавдрын эрт оношилгоо, генетик шинжилгээ, нарийвчилсан CT/MRI г.м."
+  },
+  "medical.f3_t": {
+    "ko": "암·중증질환",
+    "en": "Cancer & Critical Care",
+    "ja": "がん・重症疾患",
+    "zh": "癌症·重症",
+    "mn": "Хорт хавдар ба хүнд өвчин"
+  },
+  "medical.f3_d": {
+    "ko": "암 수술, 항암치료, 방사선치료, 중증 심장·신경계 질환 치료 등.",
+    "en": "Cancer surgery, chemotherapy, radiation therapy, severe cardiac and neurological care.",
+    "ja": "がん手術、抗がん剤治療、放射線治療、重症の心臓・神経系疾患治療など。",
+    "zh": "癌症手术、化疗、放疗、重症心脏与神经系统疾病治疗等。",
+    "mn": "Хавдрын мэс засал, химийн эмчилгээ, туяа эмчилгээ, зүрх, мэдрэлийн хүнд өвчин г.м."
+  },
+  "medical.f4_t": {
+    "ko": "안과·기타",
+    "en": "Ophthalmology & More",
+    "ja": "眼科・その他",
+    "zh": "眼科·其他",
+    "mn": "Нүд ба бусад"
+  },
+  "medical.f4_d": {
+    "ko": "안과(라식·라섹·스마일), 재활치료, 한방 웰니스, 치과 임플란트 등.",
+    "en": "Ophthalmology (LASIK/LASEK/SMILE), rehabilitation, oriental wellness, dental implants.",
+    "ja": "眼科(レーシック・ラセック・スマイル)、リハビリ、韓方ウェルネス、歯科インプラントなど。",
+    "zh": "眼科（LASIK/LASEK/SMILE）、康复治疗、韩方养生、牙科种植等。",
+    "mn": "Нүд (LASIK/LASEK/SMILE), сэргээн засах, уламжлалт эмчилгээ, шүдний имплант г.м."
+  },
+  "medical.fields_note": {
+    "ko": "협력 의료기관은 보건복지부 인증 또는 JCI 인증 의료기관을 우선 선정하여 환자 안전 및 서비스 품질을 확보합니다.",
+    "en": "Partner hospitals are prioritized among Ministry of Health-certified or JCI-accredited institutions to secure patient safety and service quality.",
+    "ja": "協力医療機関は保健福祉部認証またはJCI認証の医療機関を優先的に選定し、患者の安全とサービス品質を確保します。",
+    "zh": "合作医疗机构优先选择保健福祉部认证或JCI认证机构，以确保患者安全与服务质量。",
+    "mn": "Хамтран ажиллах эмнэлгийг ЭМЯ-ны болон JCI гэрчилгээтэй байгууллагаас тэргүүн ээлжид сонгож өвчтний аюулгүй байдал, үйлчилгээний чанарыг хангана."
+  },
+  "medical.partners_eyebrow": {
+    "ko": "협력 의료기관",
+    "en": "Partner hospitals",
+    "ja": "協力医療機関",
+    "zh": "合作医疗机构",
+    "mn": "Хамтран ажилладаг эмнэлэг"
+  },
+  "medical.partners_h2": {
+    "ko": "분야별 우수 의료기관과 정식 협력합니다.",
+    "en": "Formally partnered with leading hospitals in each field.",
+    "ja": "分野ごとに優秀な医療機関と正式に協力しています。",
+    "zh": "在各领域与优秀医疗机构正式合作。",
+    "mn": "Чиглэл тус бүрийн шилдэг эмнэлэгтэй албан ёсоор хамтардаг."
+  },
+  "medical.partners_intro": {
+    "ko": "BSH International은 분야별 우수 의료기관과 정식 협력 계약을 체결하여, 외국인 환자에게 신뢰할 수 있는 의료 네트워크를 제공합니다.",
+    "en": "BSH International signs formal partnership agreements with leading hospitals in each field, providing overseas patients with a trustworthy medical network.",
+    "ja": "BSH Internationalは分野別の優秀な医療機関と正式な協力契約を締結し、外国人患者に信頼できる医療ネットワークを提供します。",
+    "zh": "BSH International 与各领域优秀医疗机构签订正式合作协议，为外国患者提供值得信赖的医疗网络。",
+    "mn": "BSH International нь чиглэл тус бүрийн шилдэг эмнэлэгтэй албан ёсны хамтын ажиллагааны гэрээ байгуулж, гадаад өвчтөнд найдвартай эмнэлгийн сүлжээ үзүүлдэг."
+  },
+  "medical.th_name": {
+    "ko": "협력 의료기관",
+    "en": "Partner institution",
+    "ja": "協力医療機関",
+    "zh": "合作机构",
+    "mn": "Эмнэлэг"
+  },
+  "medical.th_field": {
+    "ko": "진료분야",
+    "en": "Specialty",
+    "ja": "診療分野",
+    "zh": "诊疗领域",
+    "mn": "Чиглэл"
+  },
+  "medical.th_link": {
+    "ko": "홈페이지",
+    "en": "Website",
+    "ja": "ホームページ",
+    "zh": "官网",
+    "mn": "Вэбсайт"
+  },
+  "medical.link_go": {
+    "ko": "바로가기",
+    "en": "Visit",
+    "ja": "開く",
+    "zh": "前往",
+    "mn": "Нээх"
+  },
+  "medical.link_soon": {
+    "ko": "준비중",
+    "en": "Coming soon",
+    "ja": "準備中",
+    "zh": "准备中",
+    "mn": "Удахгүй"
+  },
+  "medical.p1_field": {
+    "ko": "안과 (시력교정 전문 — 라식·라섹·스마일라식 등)",
+    "en": "Ophthalmology (vision correction — LASIK, LASEK, SMILE, etc.)",
+    "ja": "眼科(視力矯正専門 — レーシック・ラセック・スマイルなど)",
+    "zh": "眼科（视力矫正专科 — LASIK、LASEK、SMILE等）",
+    "mn": "Нүд (хараа засах — LASIK, LASEK, SMILE г.м.)"
+  },
+  "medical.p2_field": {
+    "ko": "건강검진 (종합건강검진, 정밀검진)",
+    "en": "Health screening (comprehensive and precision checkups)",
+    "ja": "健康診断(総合健康診断、精密検診)",
+    "zh": "健康检查（综合体检、精密检查）",
+    "mn": "Эрүүл мэндийн үзлэг (иж бүрэн ба нарийвчилсан)"
+  },
+  "medical.p3_field": {
+    "ko": "전 진료과목 (종합병원)",
+    "en": "All specialties (general hospital)",
+    "ja": "全診療科目(総合病院)",
+    "zh": "全部科室（综合医院）",
+    "mn": "Бүх чиглэл (нэгдсэн эмнэлэг)"
+  },
+  "medical.p4_field": {
+    "ko": "전 진료과목 (상급종합병원)",
+    "en": "All specialties (tertiary general hospital)",
+    "ja": "全診療科目(上級総合病院)",
+    "zh": "全部科室（高级综合医院）",
+    "mn": "Бүх чиглэл (дээд зэрэглэлийн эмнэлэг)"
+  },
+  "medical.p5_field": {
+    "ko": "피부과 (서울 중구 회현동)",
+    "en": "Dermatology (Hoehyeon-dong, Jung-gu, Seoul)",
+    "ja": "皮膚科(ソウル中区会賢洞)",
+    "zh": "皮肤科（首尔中区会贤洞）",
+    "mn": "Арьсны (Сөүл, Жунг-гу, Хвэхён-дун)"
+  },
+  "medical.p6_field": {
+    "ko": "성형외과, 피부과",
+    "en": "Plastic surgery, dermatology",
+    "ja": "美容外科、皮膚科",
+    "zh": "整形外科、皮肤科",
+    "mn": "Гоо засал, арьсны"
+  },
+  "medical.process_eyebrow": {
+    "ko": "원스톱 서비스 절차",
+    "en": "One-stop service process",
+    "ja": "ワンストップ・サービスの流れ",
+    "zh": "一站式服务流程",
+    "mn": "Нэг цэгийн үйлчилгээний дараалал"
+  },
+  "medical.step1_k": {
+    "ko": "STEP 01",
+    "en": "STEP 01",
+    "ja": "STEP 01",
+    "zh": "步骤 01",
+    "mn": "АЛХАМ 01"
+  },
+  "medical.step1_t": {
+    "ko": "입국 전",
+    "en": "Before arrival",
+    "ja": "入国前",
+    "zh": "入境前",
+    "mn": "Ирэхээс өмнө"
+  },
+  "medical.step1_d": {
+    "ko": "다국어 사전 상담, 의료기관·비용 안내, 의료관광(C-3-M) 비자 지원, 항공·숙박 연계, 의료 서류 번역.",
+    "en": "Multilingual pre-consultation, hospital and cost guidance, C-3-M medical visa support, flight/lodging arrangement, medical-record translation.",
+    "ja": "多言語事前相談、医療機関・費用案内、医療観光(C-3-M)ビザ支援、航空・宿泊手配、医療書類翻訳。",
+    "zh": "多语言预咨询、医疗机构与费用指引、医疗旅游（C-3-M）签证支持、机票住宿对接、病历翻译。",
+    "mn": "Олон хэлээр урьдчилсан зөвлөгөө, эмнэлэг ба зардлын мэдээлэл, эмнэлгийн (C-3-M) визийн дэмжлэг, нислэг, байрны зохицуулалт, эмнэлгийн бичиг баримтын орчуулга."
+  },
+  "medical.step2_k": {
+    "ko": "STEP 02",
+    "en": "STEP 02",
+    "ja": "STEP 02",
+    "zh": "步骤 02",
+    "mn": "АЛХАМ 02"
+  },
+  "medical.step2_t": {
+    "ko": "체류 중",
+    "en": "During the stay",
+    "ja": "滞在中",
+    "zh": "停留期间",
+    "mn": "Байх хугацаанд"
+  },
+  "medical.step2_d": {
+    "ko": "공항 픽업, 전담 통역사 진료 동행, 예약·진료 코디네이션, 숙박·관광 연계, 24시간 긴급 연락망.",
+    "en": "Airport pickup, dedicated interpreter at visits, appointment and care coordination, lodging/tourism support, 24-hour emergency line.",
+    "ja": "空港送迎、専属通訳の診療同行、予約・診療コーディネーション、宿泊・観光連携、24時間緊急連絡網。",
+    "zh": "机场接送、专属翻译陪诊、预约与诊疗协调、住宿与旅游对接、24小时紧急联络。",
+    "mn": "Онгоцны буудлаас тосох, орчуулагч хамт явах, цаг захиалга, эмчилгээний зохицуулалт, байр, аялал, 24 цагийн яаралтай холбоо."
+  },
+  "medical.step3_k": {
+    "ko": "STEP 03",
+    "en": "STEP 03",
+    "ja": "STEP 03",
+    "zh": "步骤 03",
+    "mn": "АЛХАМ 03"
+  },
+  "medical.step3_t": {
+    "ko": "귀국 후",
+    "en": "After returning home",
+    "ja": "帰国後",
+    "zh": "回国后",
+    "mn": "Буцсаны дараа"
+  },
+  "medical.step3_d": {
+    "ko": "경과 모니터링과 추가 상담, 현지 의료기관 연계, 만족도 조사를 통한 사후관리.",
+    "en": "Recovery monitoring and further consultation, local hospital referral, follow-up via satisfaction surveys.",
+    "ja": "経過モニタリングと追加相談、現地医療機関の連携、満足度調査によるアフターケア。",
+    "zh": "康复随访与追加咨询、本地医疗机构对接、通过满意度调查的术后管理。",
+    "mn": "Байдлын хяналт, нэмэлт зөвлөгөө, нутгийн эмнэлэгт холбох, сэтгэл ханамжийн судалгаагаар дараах үйлчилгээ."
+  },
+  "medical.cta_h2": {
+    "ko": "어떤 치료가 필요하신가요? 먼저 상담해 보세요.",
+    "en": "Not sure which treatment fits? Start with a consultation.",
+    "ja": "どんな治療が必要ですか？まずはご相談ください。",
+    "zh": "需要哪种治疗？先来咨询吧。",
+    "mn": "Ямар эмчилгээ хэрэгтэй вэ? Эхлээд зөвлөгөө аваарай."
+  },
+  "export.title": {
+    "ko": "해외사업·수출지원 — BSH International",
+    "en": "Export Support — BSH International",
+    "ja": "輸出支援 — BSH International",
+    "zh": "出口支持 — BSH International",
+    "mn": "Экспортын дэмжлэг — BSH International"
+  },
+  "export.hero_eyebrow": {
+    "ko": "해외사업 · 수출지원",
+    "en": "Global business · Export support",
+    "ja": "海外事業 · 輸出支援",
+    "zh": "海外业务 · 出口支持",
+    "mn": "Гадаад бизнес · Экспортын дэмжлэг"
+  },
+  "export.hero_h1": {
+    "ko": "한국 중소기업의 제품을 세계 시장으로 잇습니다.",
+    "en": "Connecting Korean SME products to global markets.",
+    "ja": "韓国中小企業の製品を世界市場へつなぎます。",
+    "zh": "将韩国中小企业的产品对接全球市场。",
+    "mn": "Солонгосын жижиг дунд бизнесийн бүтээгдэхүүнийг дэлхийн зах зээлд холбоно."
+  },
+  "export.hero_lead": {
+    "ko": "국내 중소기업이 보유한 우수한 제품과 기술력을 해외 시장에 효과적으로 알리고, 실질적인 수출 성과로 이어지도록 처음부터 끝까지 동행하는 종합 무역 지원 서비스입니다.",
+    "en": "A full-service trade support that effectively promotes Korean SMEs' excellent products and technology in overseas markets — walking with you from start to finish until they become real export results.",
+    "ja": "国内中小企業が持つ優れた製品と技術力を海外市場へ効果的に広め、実際の輸出成果につながるよう最初から最後まで伴走する総合貿易支援サービスです。",
+    "zh": "一项综合贸易支持服务，将国内中小企业拥有的优秀产品与技术有效推广至海外市场，并从头到尾陪伴，直至转化为实际出口成果。",
+    "mn": "Дотоодын жижиг дунд бизнесийн чанартай бүтээгдэхүүн, технологийг гадаад зах зээлд үр дүнтэй таниулж, бодит экспортын үр дүнд хүргэх хүртэл эхнээс эцэс хүртэл хамт байх иж бүрэн худалдааны дэмжлэгийн үйлчилгээ."
+  },
+  "export.items_eyebrow": {
+    "ko": "취급 품목",
+    "en": "Product categories",
+    "ja": "取扱品目",
+    "zh": "经营品类",
+    "mn": "Бүтээгдэхүүний төрөл"
+  },
+  "export.it1_t": {
+    "ko": "IT 부품 (IT Components)",
+    "en": "IT Components",
+    "ja": "IT部品 (IT Components)",
+    "zh": "IT 零部件",
+    "mn": "IT эд анги"
+  },
+  "export.it1_l1": {
+    "ko": "반도체 관련 부품, 전자 모듈, 센서류 등",
+    "en": "Semiconductor parts, electronic modules, sensors and more",
+    "ja": "半導体関連部品、電子モジュール、センサー類など",
+    "zh": "半导体相关零件、电子模块、传感器等",
+    "mn": "Хагас дамжуулагчийн эд анги, электрон модуль, мэдрэгч г.м."
+  },
+  "export.it1_l2": {
+    "ko": "기술 스펙시트 번역 및 해외 바이어용 카탈로그 제작 지원",
+    "en": "Spec-sheet translation and catalog creation for overseas buyers",
+    "ja": "技術スペックシート翻訳、海外バイヤー向けカタログ制作支援",
+    "zh": "技术规格书翻译及面向海外买家的目录制作支持",
+    "mn": "Техникийн үзүүлэлтийн орчуулга, гадаад худалдан авагчид зориулсан каталог боловсруулах дэмжлэг"
+  },
+  "export.it1_l3": {
+    "ko": "해외 전시회(반도체·전자 박람회) 연계 및 바이어 매칭",
+    "en": "Linkage to overseas (semiconductor/electronics) expos and buyer matching",
+    "ja": "海外展示会(半導体・電子博覧会)連携およびバイヤーマッチング",
+    "zh": "对接海外展会（半导体·电子博览会）及买家匹配",
+    "mn": "Гадаад үзэсгэлэн (хагас дамжуулагч, электроник)-тэй холбож худалдан авагч тааруулах"
+  },
+  "export.it2_t": {
+    "ko": "화장품 (K-Beauty)",
+    "en": "Cosmetics (K-Beauty)",
+    "ja": "化粧品 (K-Beauty)",
+    "zh": "化妆品 (K-Beauty)",
+    "mn": "Гоо сайхан (K-Beauty)"
+  },
+  "export.it2_l1": {
+    "ko": "스킨케어, 메이크업, 더모 코스메틱 등 K-뷰티 제품",
+    "en": "Skincare, makeup, dermo-cosmetics and other K-Beauty products",
+    "ja": "スキンケア、メイクアップ、ダーマコスメティックなどK-ビューティー製品",
+    "zh": "护肤、彩妆、药妆等K-Beauty产品",
+    "mn": "Арьс арчилгаа, нүүр будалт, дермо-косметик зэрэг K-Beauty бүтээгдэхүүн"
+  },
+  "export.it2_l2": {
+    "ko": "해외 인증(CPNP, FDA 등) 컨설팅 연계 지원",
+    "en": "Support for overseas certification (CPNP, FDA, etc.) consulting",
+    "ja": "海外認証(CPNP、FDAなど)コンサルティング連携支援",
+    "zh": "对接海外认证（CPNP、FDA等）咨询支持",
+    "mn": "Гадаад баталгаажуулалт (CPNP, FDA г.м)-ын зөвлөгөөний дэмжлэг"
+  },
+  "export.it2_l3": {
+    "ko": "현지 유통망(온라인몰·오프라인 리테일) 입점 지원",
+    "en": "Support for entering local distribution (online malls and offline retail)",
+    "ja": "現地流通網(オンラインモール・オフライン小売)への出店支援",
+    "zh": "协助进入本地渠道（线上商城·线下零售）",
+    "mn": "Нутгийн борлуулалтын сүлжээ (онлайн дэлгүүр, офлайн жижиглэн)-д нэвтрэх дэмжлэг"
+  },
+  "export.it3_t": {
+    "ko": "식품 (Food & Beverage)",
+    "en": "Food & Beverage",
+    "ja": "食品 (Food & Beverage)",
+    "zh": "食品 (Food & Beverage)",
+    "mn": "Хүнс (Food & Beverage)"
+  },
+  "export.it3_l1": {
+    "ko": "가공식품, 건강식품, K-푸드 트렌드 제품",
+    "en": "Processed foods, health foods, trending K-Food products",
+    "ja": "加工食品、健康食品、K-フードトレンド製品",
+    "zh": "加工食品、保健食品、K-Food潮流产品",
+    "mn": "Боловсруулсан хүнс, эрүүл мэндийн хүнс, K-Food загварын бүтээгдэхүүн"
+  },
+  "export.it3_l2": {
+    "ko": "수출용 위생/검역 인증 서류 준비 지원",
+    "en": "Support preparing export sanitation/quarantine certification documents",
+    "ja": "輸出用の衛生・検疫認証書類の準備支援",
+    "zh": "协助准备出口卫生/检疫认证文件",
+    "mn": "Экспортын ариун цэвэр, хорио цээрийн гэрчилгээний бичиг баримт бэлтгэх дэмжлэг"
+  },
+  "export.it3_l3": {
+    "ko": "할랄, 유기농 등 해외 인증 컨설팅 연계",
+    "en": "Linkage to overseas certification consulting such as Halal and organic",
+    "ja": "ハラル、オーガニックなど海外認証コンサルティング連携",
+    "zh": "对接清真、有机等海外认证咨询",
+    "mn": "Халал, органик зэрэг гадаад баталгаажуулалтын зөвлөгөөтэй холбох"
+  },
+  "export.process_eyebrow": {
+    "ko": "진행 프로세스",
+    "en": "Our process",
+    "ja": "進行プロセス",
+    "zh": "流程",
+    "mn": "Үйл явц"
+  },
+  "export.proc_th1": {
+    "ko": "단계",
+    "en": "Step",
+    "ja": "段階",
+    "zh": "阶段",
+    "mn": "Алхам"
+  },
+  "export.proc_th2": {
+    "ko": "내용",
+    "en": "What we do",
+    "ja": "内容",
+    "zh": "内容",
+    "mn": "Агуулга"
+  },
+  "export.proc1_s": {
+    "ko": "1단계. 상담 및 제품 분석",
+    "en": "Step 1. Consultation & product analysis",
+    "ja": "1段階. 相談および製品分析",
+    "zh": "第1阶段. 咨询与产品分析",
+    "mn": "1-р алхам. Зөвлөгөө ба бүтээгдэхүүний шинжилгээ"
+  },
+  "export.proc1_v": {
+    "ko": "기업 제품 경쟁력 분석, 타겟 국가 및 시장성 진단",
+    "en": "Product competitiveness analysis, target country and market viability assessment",
+    "ja": "企業製品の競争力分析、ターゲット国および市場性の診断",
+    "zh": "企业产品竞争力分析、目标国家及市场性诊断",
+    "mn": "Бүтээгдэхүүний өрсөлдөх чадварын шинжилгээ, зорилтот улс, зах зээлийн үнэлгээ"
+  },
+  "export.proc2_s": {
+    "ko": "2단계. 자료 제작",
+    "en": "Step 2. Material production",
+    "ja": "2段階. 資料制作",
+    "zh": "第2阶段. 资料制作",
+    "mn": "2-р алхам. Материал боловсруулах"
+  },
+  "export.proc2_v": {
+    "ko": "다국어 카탈로그, 제품소개서, 샘플 키트 구성 지원",
+    "en": "Multilingual catalogs, product brochures and sample-kit support",
+    "ja": "多言語カタログ、製品紹介書、サンプルキット構成支援",
+    "zh": "多语言目录、产品介绍书、样品套装支持",
+    "mn": "Олон хэлний каталог, бүтээгдэхүүний танилцуулга, дээжийн багц бэлтгэх дэмжлэг"
+  },
+  "export.proc3_s": {
+    "ko": "3단계. 바이어 발굴",
+    "en": "Step 3. Buyer sourcing",
+    "ja": "3段階. バイヤー発掘",
+    "zh": "第3阶段. 买家发掘",
+    "mn": "3-р алхам. Худалдан авагч хайх"
+  },
+  "export.proc3_v": {
+    "ko": "글로벌 네트워크를 통한 현지 바이어/유통사 매칭",
+    "en": "Local buyer and distributor matching through our global network",
+    "ja": "グローバルネットワークによる現地バイヤー/流通会社のマッチング",
+    "zh": "通过全球网络匹配本地买家/经销商",
+    "mn": "Дэлхийн сүлжээгээр нутгийн худалдан авагч, дистрибьютер тааруулах"
+  },
+  "export.proc4_s": {
+    "ko": "4단계. 협상 및 미팅 지원",
+    "en": "Step 4. Negotiation & meeting support",
+    "ja": "4段階. 交渉および会議支援",
+    "zh": "第4阶段. 谈判与会议支持",
+    "mn": "4-р алхам. Хэлэлцээр ба уулзалтын дэмжлэг"
+  },
+  "export.proc4_v": {
+    "ko": "화상/현지 미팅 주선, 통역, 협상 자문",
+    "en": "Arranging video/on-site meetings, interpretation and negotiation advice",
+    "ja": "オンライン/現地会議の手配、通訳、交渉アドバイス",
+    "zh": "安排视频/现场会议、翻译、谈判咨询",
+    "mn": "Цахим/газар дээрх уулзалт зохион байгуулах, орчуулга, хэлэлцээрийн зөвлөгөө"
+  },
+  "export.proc5_s": {
+    "ko": "5단계. 계약 및 수출 실무",
+    "en": "Step 5. Contract & export execution",
+    "ja": "5段階. 契約および輸出実務",
+    "zh": "第5阶段. 合同与出口实务",
+    "mn": "5-р алхам. Гэрээ ба экспортын ажил"
+  },
+  "export.proc5_v": {
+    "ko": "계약서 검토 자문, 통관·물류 파트너 연계",
+    "en": "Contract review advice, customs and logistics partner linkage",
+    "ja": "契約書レビュー助言、通関・物流パートナー連携",
+    "zh": "合同审阅咨询、对接通关与物流伙伴",
+    "mn": "Гэрээ хянах зөвлөгөө, гааль, логистикийн түнштэй холбох"
+  },
+  "export.proc6_s": {
+    "ko": "6단계. 사후관리",
+    "en": "Step 6. Aftercare",
+    "ja": "6段階. アフターケア",
+    "zh": "第6阶段. 售后管理",
+    "mn": "6-р алхам. Дараах үйлчилгээ"
+  },
+  "export.proc6_v": {
+    "ko": "정기 피드백, 재구매 유도, 시장 확대 전략 자문",
+    "en": "Regular feedback, repeat-purchase support, market-expansion strategy advice",
+    "ja": "定期フィードバック、リピート促進、市場拡大戦略の助言",
+    "zh": "定期反馈、促进复购、市场扩张策略咨询",
+    "mn": "Тогтмол санал хүсэлт, дахин худалдан авалт, зах зээл тэлэх стратегийн зөвлөгөө"
+  },
+  "export.core_eyebrow": {
+    "ko": "핵심 서비스",
+    "en": "Core services",
+    "ja": "主なサービス",
+    "zh": "核心服务",
+    "mn": "Үндсэн үйлчилгээ"
+  },
+  "export.core1": {
+    "ko": "해외 시장 진출 전략 수립 (국가별 진입전략, 가격 정책 자문)",
+    "en": "Overseas market-entry strategy (country-specific entry plans, pricing advice)",
+    "ja": "海外市場進出戦略の策定(国別参入戦略、価格政策の助言)",
+    "zh": "海外市场进入战略制定（分国进入策略、价格政策咨询）",
+    "mn": "Гадаад зах зээлд нэвтрэх стратеги (улс бүрийн нэвтрэх төлөвлөгөө, үнийн зөвлөгөө)"
+  },
+  "export.core2": {
+    "ko": "무역 박람회 및 전시회 참가 연계",
+    "en": "Linkage to trade fairs and exhibitions",
+    "ja": "貿易見本市・展示会への参加連携",
+    "zh": "对接贸易博览会及展会参展",
+    "mn": "Худалдааны үзэсгэлэн, яармагт оролцох холболт"
+  },
+  "export.core3": {
+    "ko": "B2B 매칭 플랫폼 및 글로벌 네트워크 활용 바이어 소개",
+    "en": "Buyer introductions via B2B matching platforms and a global network",
+    "ja": "B2Bマッチングプラットフォームおよびグローバルネットワークを活用したバイヤー紹介",
+    "zh": "利用B2B匹配平台及全球网络介绍买家",
+    "mn": "B2B тааруулах платформ, дэлхийн сүлжээгээр худалдан авагч танилцуулах"
+  },
+  "export.core4": {
+    "ko": "수출 서류, 인증, 통관 관련 전문기관 연계 지원",
+    "en": "Linkage to specialists for export documents, certification and customs",
+    "ja": "輸出書類、認証、通関に関する専門機関の連携支援",
+    "zh": "对接出口文件、认证、通关相关专业机构",
+    "mn": "Экспортын бичиг баримт, баталгаажуулалт, гаалийн мэргэжлийн байгууллагатай холбох дэмжлэг"
+  },
+  "export.cta_h2": {
+    "ko": "세계로 나아갈 준비가 되셨나요? 파트너십을 문의하세요.",
+    "en": "Ready to go global? Let's talk partnership.",
+    "ja": "世界へ進む準備はできていますか？パートナーシップをお問い合わせください。",
+    "zh": "准备好走向世界了吗？欢迎咨询合作。",
+    "mn": "Дэлхийд гарах бэлэн үү? Түншлэлийн талаар холбогдоорой."
+  },
+  "export.cta_btn": {
+    "ko": "파트너십 문의",
+    "en": "Partnership inquiry",
+    "ja": "パートナーシップのお問い合わせ",
+    "zh": "合作咨询",
+    "mn": "Түншлэлийн асуулга"
+  },
+  "consulting.title": {
+    "ko": "경영·코칭 컨설팅 — BSH International",
+    "en": "Management & Coaching — BSH International",
+    "ja": "経営・コーチング — BSH International",
+    "zh": "管理与教练咨询 — BSH International",
+    "mn": "Менежмент ба коучинг — BSH International"
+  },
+  "consulting.hero_eyebrow": {
+    "ko": "경영 · 코칭 컨설팅",
+    "en": "Management · Coaching consulting",
+    "ja": "経営 · コーチングコンサルティング",
+    "zh": "管理 · 教练咨询",
+    "mn": "Менежмент · Коучинг зөвлөгөө"
+  },
+  "consulting.hero_h1": {
+    "ko": "조직의 성장과 사람의 변화를 함께 설계합니다.",
+    "en": "Designing organizational growth and personal change, together.",
+    "ja": "組織の成長と人の変化をともに設計します。",
+    "zh": "共同设计组织的成长与人的转变。",
+    "mn": "Байгууллагын өсөлт, хүний өөрчлөлтийг хамтад нь зохион бүтээнэ."
+  },
+  "consulting.hero_lead": {
+    "ko": "경영학 박사와 상담심리학 박사 학위를 겸비한 전문성을 바탕으로, 기업에는 조직 성장을 위한 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 이끄는 코칭을 제공합니다.",
+    "en": "Backed by doctorates in business administration and counseling psychology, we provide management solutions for organizational growth to companies, and coaching that drives life and career change for individuals.",
+    "ja": "経営学博士とカウンセリング心理学博士の専門性を基盤に、企業には組織成長のための経営ソリューションを、個人には人生とキャリアの変化を導くコーチングを提供します。",
+    "zh": "以管理学博士与咨询心理学博士的专业为基础，为企业提供促进组织成长的管理方案，为个人提供引领人生与职业转变的教练。",
+    "mn": "Бизнесийн удирдлага болон сэтгэл зүйн зөвлөгөөний докторын мэдлэгт тулгуурлан компанид байгууллагын өсөлтийн менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг хөтлөх коучинг үзүүлнэ."
+  },
+  "consulting.corp_eyebrow": {
+    "ko": "기업 대상",
+    "en": "For corporations",
+    "ja": "企業向け",
+    "zh": "面向企业",
+    "mn": "Байгууллагад"
+  },
+  "consulting.corp1_t": {
+    "ko": "임직원 교육 프로그램",
+    "en": "Employee training programs",
+    "ja": "役職員教育プログラム",
+    "zh": "员工培训项目",
+    "mn": "Ажилтны сургалтын хөтөлбөр"
+  },
+  "consulting.corp1_l1": {
+    "ko": "리더십 역량 강화 교육",
+    "en": "Leadership capability training",
+    "ja": "リーダーシップ力強化教育",
+    "zh": "领导力提升培训",
+    "mn": "Манлайллын чадавхийг бэхжүүлэх сургалт"
+  },
+  "consulting.corp1_l2": {
+    "ko": "조직문화 진단 및 개선 워크숍",
+    "en": "Organizational-culture diagnosis and improvement workshops",
+    "ja": "組織文化の診断および改善ワークショップ",
+    "zh": "组织文化诊断与改善工作坊",
+    "mn": "Байгууллагын соёлын оношилгоо ба сайжруулах семинар"
+  },
+  "consulting.corp1_l3": {
+    "ko": "커뮤니케이션·갈등관리 교육",
+    "en": "Communication and conflict-management training",
+    "ja": "コミュニケーション・葛藤管理教育",
+    "zh": "沟通与冲突管理培训",
+    "mn": "Харилцаа, зөрчил зохицуулах сургалт"
+  },
+  "consulting.corp1_l4": {
+    "ko": "신입사원/관리자 대상 맞춤형 연수",
+    "en": "Customized training for new hires and managers",
+    "ja": "新入社員/管理者向けカスタマイズ研修",
+    "zh": "面向新员工/管理者的定制研修",
+    "mn": "Шинэ ажилтан/менежерт зориулсан тусгай сургалт"
+  },
+  "consulting.corp2_t": {
+    "ko": "경영 컨설팅",
+    "en": "Management consulting",
+    "ja": "経営コンサルティング",
+    "zh": "管理咨询",
+    "mn": "Менежментийн зөвлөгөө"
+  },
+  "consulting.corp2_l1": {
+    "ko": "경영 전략 수립 및 진단 자문",
+    "en": "Management strategy formulation and diagnostic advisory",
+    "ja": "経営戦略の策定および診断助言",
+    "zh": "经营战略制定与诊断咨询",
+    "mn": "Менежментийн стратеги боловсруулах, оношилгооны зөвлөгөө"
+  },
+  "consulting.corp2_l2": {
+    "ko": "조직개발(OD) 및 인사조직 설계 자문",
+    "en": "Organizational development (OD) and HR-structure design advisory",
+    "ja": "組織開発(OD)および人事組織設計の助言",
+    "zh": "组织发展（OD）与人事组织设计咨询",
+    "mn": "Байгууллагын хөгжил (OD), хүний нөөцийн бүтэц зохион байгуулах зөвлөгөө"
+  },
+  "consulting.corp2_l3": {
+    "ko": "글로벌 진출 전략 자문 (해외사업과 연계)",
+    "en": "Global expansion strategy advisory (linked with export support)",
+    "ja": "グローバル進出戦略の助言(海外事業と連携)",
+    "zh": "全球拓展战略咨询（与海外业务联动）",
+    "mn": "Дэлхийд тэлэх стратегийн зөвлөгөө (гадаад бизнестэй холбоотой)"
+  },
+  "consulting.indiv_eyebrow": {
+    "ko": "개인 대상",
+    "en": "For individuals",
+    "ja": "個人向け",
+    "zh": "面向个人",
+    "mn": "Хувь хүнд"
+  },
+  "consulting.indiv1_t": {
+    "ko": "1:1 코칭",
+    "en": "1:1 coaching",
+    "ja": "1:1コーチング",
+    "zh": "一对一教练",
+    "mn": "1:1 коучинг"
+  },
+  "consulting.indiv1_l1": {
+    "ko": "커리어 코칭 (전환기, 진로 설계, 이력 점검)",
+    "en": "Career coaching (transitions, path design, résumé review)",
+    "ja": "キャリアコーチング(転換期、進路設計、経歴点検)",
+    "zh": "职业教练（转型期、生涯规划、履历检视）",
+    "mn": "Карьерын коучинг (шилжилт, замаа төлөвлөх, намтар хянах)"
+  },
+  "consulting.indiv1_l2": {
+    "ko": "리더십 코칭 (관리자, 임원 대상)",
+    "en": "Leadership coaching (for managers and executives)",
+    "ja": "リーダーシップコーチング(管理者・役員向け)",
+    "zh": "领导力教练（面向管理者、高管）",
+    "mn": "Манлайллын коучинг (менежер, удирдлагад)"
+  },
+  "consulting.indiv1_l3": {
+    "ko": "라이프 코칭 (자기이해, 목표설정, 동기부여)",
+    "en": "Life coaching (self-understanding, goal-setting, motivation)",
+    "ja": "ライフコーチング(自己理解、目標設定、動機づけ)",
+    "zh": "生活教练（自我认知、目标设定、激励）",
+    "mn": "Амьдралын коучинг (өөрийгөө ойлгох, зорилго тавих, урам зориг)"
+  },
+  "consulting.indiv2_t": {
+    "ko": "상담 기반 프로그램",
+    "en": "Counseling-based programs",
+    "ja": "カウンセリングベースのプログラム",
+    "zh": "以咨询为基础的项目",
+    "mn": "Зөвлөгөөнд суурилсан хөтөлбөр"
+  },
+  "consulting.indiv2_l1": {
+    "ko": "심리상담 이론에 기반한 자기탐색 워크숍",
+    "en": "Self-exploration workshops grounded in counseling theory",
+    "ja": "心理カウンセリング理論に基づく自己探索ワークショップ",
+    "zh": "基于心理咨询理论的自我探索工作坊",
+    "mn": "Сэтгэл зүйн зөвлөгөөний онолд суурилсан өөрийгөө таних семинар"
+  },
+  "consulting.indiv2_l2": {
+    "ko": "스트레스·번아웃 관리 프로그램",
+    "en": "Stress and burnout management programs",
+    "ja": "ストレス・バーンアウト管理プログラム",
+    "zh": "压力与倦怠管理项目",
+    "mn": "Стресс, ядаргааг удирдах хөтөлбөр"
+  },
+  "consulting.indiv2_l3": {
+    "ko": "의사결정 및 자기효능감 향상 코칭",
+    "en": "Coaching to improve decision-making and self-efficacy",
+    "ja": "意思決定および自己効力感向上コーチング",
+    "zh": "决策与自我效能提升教练",
+    "mn": "Шийдвэр гаргах, өөртөө итгэх итгэлийг сайжруулах коучинг"
+  },
+  "consulting.ops_eyebrow": {
+    "ko": "프로그램 운영 방식",
+    "en": "How programs run",
+    "ja": "プログラム運営方式",
+    "zh": "项目运营方式",
+    "mn": "Хөтөлбөрийн зохион байгуулалт"
+  },
+  "consulting.ops1": {
+    "ko": "1회성 특강 / 단기 워크숍 / 장기 코칭 프로그램(4~12주) 선택 가능",
+    "en": "Choose one-off lectures, short workshops, or long-term coaching programs (4–12 weeks)",
+    "ja": "単発特別講義/短期ワークショップ/長期コーチングプログラム(4〜12週)から選択可能",
+    "zh": "可选择单次讲座／短期工作坊／长期教练项目（4–12周）",
+    "mn": "Нэг удаагийн лекц / богино семинар / урт хугацааны коучинг (4–12 долоо хоног)-оос сонгоно"
+  },
+  "consulting.ops2": {
+    "ko": "온라인(화상) 및 오프라인(대면) 병행 운영",
+    "en": "Run both online (video) and offline (in-person)",
+    "ja": "オンライン(ビデオ)とオフライン(対面)の併行運営",
+    "zh": "线上（视频）与线下（面授）并行",
+    "mn": "Онлайн (видео), офлайн (биечлэн) хослуулан явуулна"
+  },
+  "consulting.ops3": {
+    "ko": "기업은 그룹 단위, 개인은 1:1 맞춤 세션으로 진행",
+    "en": "Companies in group sessions; individuals in customized 1:1 sessions",
+    "ja": "企業はグループ単位、個人は1:1のカスタマイズセッションで実施",
+    "zh": "企业以小组形式、个人以一对一定制会谈进行",
+    "mn": "Байгууллагыг бүлгээр, хувь хүнийг 1:1 тусгай хичээлээр явуулна"
+  },
+  "consulting.topics_eyebrow": {
+    "ko": "대표 강의·컨설팅 분야",
+    "en": "Featured lecture & consulting areas",
+    "ja": "代表的な講義・コンサルティング分野",
+    "zh": "代表性讲座与咨询领域",
+    "mn": "Гол лекц, зөвлөгөөний чиглэл"
+  },
+  "consulting.tp_th1": {
+    "ko": "구분",
+    "en": "Category",
+    "ja": "区分",
+    "zh": "类别",
+    "mn": "Ангилал"
+  },
+  "consulting.tp_th2": {
+    "ko": "주요 주제",
+    "en": "Key topics",
+    "ja": "主なテーマ",
+    "zh": "主要主题",
+    "mn": "Гол сэдэв"
+  },
+  "consulting.tp1_c": {
+    "ko": "경영",
+    "en": "Management",
+    "ja": "経営",
+    "zh": "管理",
+    "mn": "Менежмент"
+  },
+  "consulting.tp1_v": {
+    "ko": "경영전략, 조직관리, 리더십, 변화관리",
+    "en": "Strategy, organization management, leadership, change management",
+    "ja": "経営戦略、組織管理、リーダーシップ、変革管理",
+    "zh": "经营战略、组织管理、领导力、变革管理",
+    "mn": "Стратеги, байгууллагын удирдлага, манлайлал, өөрчлөлтийн менежмент"
+  },
+  "consulting.tp2_c": {
+    "ko": "코칭",
+    "en": "Coaching",
+    "ja": "コーチング",
+    "zh": "教练",
+    "mn": "Коучинг"
+  },
+  "consulting.tp2_v": {
+    "ko": "커리어 코칭, 라이프 코칭, 임원 코칭",
+    "en": "Career coaching, life coaching, executive coaching",
+    "ja": "キャリアコーチング、ライフコーチング、役員コーチング",
+    "zh": "职业教练、生活教练、高管教练",
+    "mn": "Карьерын коучинг, амьдралын коучинг, удирдлагын коучинг"
+  },
+  "consulting.tp3_c": {
+    "ko": "상담",
+    "en": "Counseling",
+    "ja": "カウンセリング",
+    "zh": "咨询",
+    "mn": "Зөвлөгөө"
+  },
+  "consulting.tp3_v": {
+    "ko": "자기이해, 관계 코칭, 동기부여, 스트레스 관리",
+    "en": "Self-understanding, relationship coaching, motivation, stress management",
+    "ja": "自己理解、関係コーチング、動機づけ、ストレス管理",
+    "zh": "自我认知、关系教练、激励、压力管理",
+    "mn": "Өөрийгөө таних, харилцааны коучинг, урам зориг, стресс удирдах"
+  },
+  "consulting.profile_eyebrow": {
+    "ko": "강사·컨설턴트 프로필",
+    "en": "Lecturer & consultant profile",
+    "ja": "講師・コンサルタントプロフィール",
+    "zh": "讲师·顾问简介",
+    "mn": "Багш, зөвлөхийн танилцуулга"
+  },
+  "consulting.cta_h2": {
+    "ko": "조직과 사람의 변화, 지금 시작해 보세요.",
+    "en": "Start changing your organization and your people today.",
+    "ja": "組織と人の変化、今すぐ始めましょう。",
+    "zh": "组织与人的转变，即刻开始。",
+    "mn": "Байгууллага, хүний өөрчлөлтийг яг одоо эхлүүлээрэй."
+  },
+  "contact.title": {
+    "ko": "고객 문의 — BSH International",
+    "en": "Contact — BSH International",
+    "ja": "お問い合わせ — BSH International",
+    "zh": "联系我们 — BSH International",
+    "mn": "Холбоо барих — BSH International"
+  },
+  "contact.hero_eyebrow": {
+    "ko": "고객 문의",
+    "en": "Get started",
+    "ja": "お問い合わせ",
+    "zh": "联系我们",
+    "mn": "Холбоо барих"
+  },
+  "contact.hero_h1": {
+    "ko": "무엇이든 한 통의 문의로 시작됩니다.",
+    "en": "Whatever you need, it starts with one message.",
+    "ja": "何でも一通のお問い合わせから始まります。",
+    "zh": "无论何事，一条留言即可开始。",
+    "mn": "Юу ч бай нэг мессежээс эхэлнэ."
+  },
+  "contact.hero_lead": {
+    "ko": "의료관광, 수출지원, 경영·코칭 — 다국어 상담으로 가장 적합한 길을 안내해 드립니다. 아래 양식을 남겨 주시면 빠르게 회신하겠습니다.",
+    "en": "Medical tourism, export support or coaching — our multilingual team will guide you to the best path. Leave your details below and we'll reply promptly.",
+    "ja": "医療ツーリズム、輸出支援、経営・コーチング — 多言語相談で最適な道をご案内します。下記フォームにご記入いただければ、迅速に返信いたします。",
+    "zh": "医疗旅游、出口支持或管理教练——我们以多语言咨询为您指引最合适的方向。请填写以下表单，我们将尽快回复。",
+    "mn": "Эмнэлгийн аялал, экспортын дэмжлэг, коучинг — олон хэлээр зөвлөж хамгийн тохиромжтой замыг зааж өгнө. Доорх маягтыг бөглөвөл бид түргэн хариулна."
+  },
+  "contact.form_eyebrow": {
+    "ko": "문의 양식",
+    "en": "Inquiry form",
+    "ja": "お問い合わせフォーム",
+    "zh": "咨询表单",
+    "mn": "Асуулгын маягт"
+  },
+  "contact.form_h2": {
+    "ko": "무료 상담 신청",
+    "en": "Free consultation request",
+    "ja": "無料相談のお申し込み",
+    "zh": "免费咨询申请",
+    "mn": "Үнэгүй зөвлөгөөний хүсэлт"
+  },
+  "contact.lb_name": {
+    "ko": "이름",
+    "en": "Name",
+    "ja": "お名前",
+    "zh": "姓名",
+    "mn": "Нэр"
+  },
+  "contact.ph_name": {
+    "ko": "홍길동",
+    "en": "Your name",
+    "ja": "お名前",
+    "zh": "您的姓名",
+    "mn": "Таны нэр"
+  },
+  "contact.lb_country": {
+    "ko": "국적",
+    "en": "Nationality",
+    "ja": "国籍",
+    "zh": "国籍",
+    "mn": "Иргэншил"
+  },
+  "contact.ph_country": {
+    "ko": "예: 일본",
+    "en": "e.g. Japan",
+    "ja": "例: 日本",
+    "zh": "例如: 日本",
+    "mn": "жишээ: Япон"
+  },
+  "contact.lb_email": {
+    "ko": "이메일",
+    "en": "Email",
+    "ja": "メール",
+    "zh": "邮箱",
+    "mn": "Имэйл"
+  },
+  "contact.lb_phone": {
+    "ko": "연락처 (전화/메신저)",
+    "en": "Phone / messenger",
+    "ja": "連絡先(電話/メッセンジャー)",
+    "zh": "联系方式（电话/即时通讯）",
+    "mn": "Утас / мессенжер"
+  },
+  "contact.ph_phone": {
+    "ko": "WeChat · LINE · 전화번호",
+    "en": "WeChat · LINE · phone",
+    "ja": "WeChat · LINE · 電話番号",
+    "zh": "WeChat · LINE · 电话",
+    "mn": "WeChat · LINE · утас"
+  },
+  "contact.lb_field": {
+    "ko": "문의 분야",
+    "en": "Inquiry area",
+    "ja": "お問い合わせ分野",
+    "zh": "咨询领域",
+    "mn": "Асуух чиглэл"
+  },
+  "contact.opt0": {
+    "ko": "선택해 주세요",
+    "en": "Please select",
+    "ja": "選択してください",
+    "zh": "请选择",
+    "mn": "Сонгоно уу"
+  },
+  "contact.opt_med": {
+    "ko": "외국인환자 유치 (의료관광)",
+    "en": "Medical tourism",
+    "ja": "医療ツーリズム",
+    "zh": "医疗旅游",
+    "mn": "Эмнэлгийн аялал"
+  },
+  "contact.opt_exp": {
+    "ko": "해외사업·수출지원",
+    "en": "Export support",
+    "ja": "輸出支援",
+    "zh": "出口支持",
+    "mn": "Экспортын дэмжлэг"
+  },
+  "contact.opt_con": {
+    "ko": "경영·코칭 컨설팅",
+    "en": "Management & coaching",
+    "ja": "経営・コーチング",
+    "zh": "管理与教练",
+    "mn": "Менежмент ба коучинг"
+  },
+  "contact.opt_etc": {
+    "ko": "기타 문의",
+    "en": "Other",
+    "ja": "その他",
+    "zh": "其他",
+    "mn": "Бусад"
+  },
+  "contact.lb_msg": {
+    "ko": "문의 내용",
+    "en": "Your message",
+    "ja": "お問い合わせ内容",
+    "zh": "咨询内容",
+    "mn": "Зурвас"
+  },
+  "contact.ph_msg": {
+    "ko": "궁금한 점, 희망 일정 등을 자유롭게 적어 주세요.",
+    "en": "Tell us your questions, preferred dates and anything else.",
+    "ja": "ご質問やご希望の日程などを自由にご記入ください。",
+    "zh": "请自由填写您的疑问、期望日程等。",
+    "mn": "Асуулт, хүссэн хуваарь зэргээ чөлөөтэй бичнэ үү."
+  },
+  "contact.submit": {
+    "ko": "문의 보내기",
+    "en": "Send inquiry",
+    "ja": "送信する",
+    "zh": "发送咨询",
+    "mn": "Илгээх"
+  },
+  "contact.form_note": {
+    "ko": "※ 입력하신 정보는 상담 목적으로만 사용됩니다.",
+    "en": "※ Your information is used only for consultation purposes.",
+    "ja": "※ ご入力いただいた情報は相談目的のみに使用されます。",
+    "zh": "※ 您填写的信息仅用于咨询目的。",
+    "mn": "※ Таны мэдээллийг зөвхөн зөвлөгөөний зорилгоор ашиглана."
+  },
+  "contact.success_t": {
+    "ko": "문의가 접수되었습니다. 감사합니다!",
+    "en": "Your inquiry has been received. Thank you!",
+    "ja": "お問い合わせを受け付けました。ありがとうございます！",
+    "zh": "您的咨询已收到，谢谢！",
+    "mn": "Таны хүсэлтийг хүлээн авлаа. Баярлалаа!"
+  },
+  "contact.success_d": {
+    "ko": "담당자가 영업일 기준 1–2일 내에 회신드립니다.",
+    "en": "A team member will reply within 1–2 business days.",
+    "ja": "担当者が営業日基準で1〜2日以内に返信いたします。",
+    "zh": "负责人将在1–2个工作日内回复。",
+    "mn": "Хариуцагч ажлын 1–2 өдрийн дотор хариу өгнө."
+  },
+  "contact.info_eyebrow": {
+    "ko": "직접 문의",
+    "en": "Reach us directly",
+    "ja": "直接お問い合わせ",
+    "zh": "直接联系",
+    "mn": "Шууд холбогдох"
+  },
+  "contact.info_h3": {
+    "ko": "언제든 연락 주세요",
+    "en": "Get in touch anytime",
+    "ja": "いつでもご連絡ください",
+    "zh": "随时联系我们",
+    "mn": "Хэдийд ч холбогдоорой"
+  },
+  "contact.info_phone": {
+    "ko": "전화",
+    "en": "Phone",
+    "ja": "電話",
+    "zh": "电话",
+    "mn": "Утас"
+  },
+  "contact.info_email": {
+    "ko": "이메일",
+    "en": "Email",
+    "ja": "メール",
+    "zh": "邮箱",
+    "mn": "Имэйл"
+  },
+  "contact.info_addr": {
+    "ko": "주소",
+    "en": "Address",
+    "ja": "住所",
+    "zh": "地址",
+    "mn": "Хаяг"
+  },
+  "contact.info_addr_v": {
+    "ko": "서울특별시 마포구",
+    "en": "Mapo-gu, Seoul, Republic of Korea",
+    "ja": "ソウル特別市 麻浦区",
+    "zh": "韩国首尔麻浦区",
+    "mn": "БНСУ, Сөүл, Мапо дүүрэг"
+  },
+  "contact.info_reg": {
+    "ko": "사업자번호",
+    "en": "Reg. No.",
+    "ja": "事業者番号",
+    "zh": "营业执照号",
+    "mn": "Бүртгэлийн дугаар"
+  },
+  "contact.langs_h": {
+    "ko": "상담 가능 언어",
+    "en": "Consultation languages",
+    "ja": "対応言語",
+    "zh": "可咨询语言",
+    "mn": "Зөвлөгөөний хэл"
+  },
+  "contact.commit": {
+    "ko": "BSH International은 고객 한 분 한 분의 안전하고 만족스러운 경험을 위해 최선을 다하겠습니다.",
+    "en": "BSH International is committed to a safe and satisfying experience for every client.",
+    "ja": "BSH Internationalは、お客様一人ひとりの安全で満足のいく経験のために最善を尽くします。",
+    "zh": "BSH International 将竭力为每一位客户带来安全、满意的体验。",
+    "mn": "BSH International нь үйлчлүүлэгч бүрийн аюулгүй, сэтгэл ханамжтай туршлагын төлөө бүхнээ зориулна."
+  },
+  "common.learn_more": {
+    "ko": "자세히 보기",
+    "en": "Learn more",
+    "ja": "詳しく見る",
+    "zh": "了解更多",
+    "mn": "Дэлгэрэнгүй"
+  },
+  "common.overview": {
+    "ko": "개요",
+    "en": "Overview",
+    "ja": "概要",
+    "zh": "概览",
+    "mn": "Тойм"
+  },
+  "nav.tagline": {
+    "ko": "종합 컨설팅",
+    "en": "Comprehensive consulting",
+    "ja": "総合コンサルティング",
+    "zh": "综合咨询",
+    "mn": "Иж бүрэн зөвлөгөө"
+  },
+  "contact.send_error": {
+    "ko": "전송 중 문제가 발생했습니다. 이메일(ookokoro@bshinternational.co.kr)로 직접 보내 주세요.",
+    "en": "Something went wrong. Please email us directly at ookokoro@bshinternational.co.kr.",
+    "ja": "送信中に問題が発生しました。ookokoro@bshinternational.co.kr まで直接お送りください。",
+    "zh": "发送时出现问题，请直接发送邮件至 ookokoro@bshinternational.co.kr。",
+    "mn": "Илгээхэд алдаа гарлаа. ookokoro@bshinternational.co.kr хаягаар шууд илгээнэ үү."
+  },
+  "medical.p7_field": {
+    "ko": "피부과 및 비만 치료",
+    "en": "Dermatology & weight-loss treatment",
+    "ja": "皮膚科および肥満治療",
+    "zh": "皮肤科及减重治疗",
+    "mn": "Арьс ба таргалалтын эмчилгээ"
+  }
+};
