@@ -300,11 +300,11 @@ window.I18N = {
     "mn": "Менежмент ба коучинг"
   },
   "home.biz3_d": {
-    "ko": "경영학·상담심리학 박사의 전문성으로 기업에는 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 제공합니다.",
-    "en": "With doctorates in business and counseling psychology, we deliver management solutions to companies and life-and-career change to individuals.",
-    "ja": "経営学・カウンセリング心理学博士の専門性で、企業には経営ソリューションを、個人には人生とキャリアの変化を提供します。",
-    "zh": "以管理学与咨询心理学博士的专业，为企业提供管理方案，为个人带来人生与职业的转变。",
-    "mn": "Бизнес болон сэтгэл зүйн зөвлөгөөний докторын мэдлэгээр компанид менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг авчирна."
+    "ko": "경영학·상담학 박사의 전문성으로 기업에는 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 제공합니다.",
+    "en": "With doctorates in business and counseling, we deliver management solutions to companies and life-and-career change to individuals.",
+    "ja": "経営学・カウンセリング学博士の専門性で、企業には経営ソリューションを、個人には人生とキャリアの変化を提供します。",
+    "zh": "以管理学与咨询学博士的专业，为企业提供管理方案，为个人带来人生与职业的转变。",
+    "mn": "Бизнес болон зөвлөгөөний докторын мэдлэгээр компанид менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг авчирна."
   },
   "home.biz_link": {
     "ko": "자세히 보기",
@@ -510,11 +510,11 @@ window.I18N = {
     "mn": "Сайн байна уу, би BSH International Co., Ltd.-ийн захирал байна."
   },
   "about.ceo_p2": {
-    "ko": "저는 오랜 시간 사람의 마음을 이해하는 상담심리학과, 조직과 시장을 움직이는 경영학을 함께 공부해왔습니다. 이 두 가지 배움은 저에게 하나의 질문으로 이어졌습니다. “사람과 사람, 나라와 나라가 진정으로 신뢰하며 함께 성장하려면 무엇이 필요할까?”",
-    "en": "For many years I have studied both counseling psychology — understanding the human heart — and business administration — moving organizations and markets. These two pursuits led me to a single question: “What does it take for people and nations to truly trust one another and grow together?”",
-    "ja": "私は長い間、人の心を理解するカウンセリング心理学と、組織と市場を動かす経営学を共に学んできました。この二つの学びは、私に一つの問いをもたらしました。「人と人、国と国が本当に信頼し合い、ともに成長するには何が必要だろうか」",
-    "zh": "长久以来，我同时研习理解人心的咨询心理学，与驱动组织和市场的管理学。这两门学问引向同一个问题：“人与人、国与国，若要真正彼此信任、共同成长，需要什么？”",
-    "mn": "Би удаан хугацаанд хүний сэтгэлийг ойлгох сэтгэл зүйн зөвлөгөө, мөн байгууллага, зах зээлийг хөдөлгөх бизнесийн удирдлагыг хамт суралцсан. Энэ хоёр сургалт намайг нэг асуултад хүргэв: «Хүн хүнтэйгээ, улс улстайгаа үнэхээр итгэлцэж хамтдаа өсөхийн тулд юу хэрэгтэй вэ?»"
+    "ko": "저는 오랜 시간 사람의 마음을 이해하는 상담학과, 조직과 시장을 움직이는 경영학을 함께 공부해왔습니다. 이 두 가지 배움은 저에게 하나의 질문으로 이어졌습니다. “사람과 사람, 나라와 나라가 진정으로 신뢰하며 함께 성장하려면 무엇이 필요할까?”",
+    "en": "For many years I have studied both counseling — understanding the human heart — and business administration — moving organizations and markets. These two pursuits led me to a single question: “What does it take for people and nations to truly trust one another and grow together?”",
+    "ja": "私は長い間、人の心を理解するカウンセリング学と、組織と市場を動かす経営学を共に学んできました。この二つの学びは、私に一つの問いをもたらしました。「人と人、国と国が本当に信頼し合い、ともに成長するには何が必要だろうか」",
+    "zh": "长久以来，我同时研习理解人心的咨询学，与驱动组织和市场的管理学。这两门学问引向同一个问题：“人与人、国与国，若要真正彼此信任、共同成长，需要什么？”",
+    "mn": "Би удаан хугацаанд хүний сэтгэлийг ойлгох зөвлөгөө, мөн байгууллага, зах зээлийг хөдөлгөх бизнесийн удирдлагыг хамт суралцсан. Энэ хоёр сургалт намайг нэг асуултад хүргэв: «Хүн хүнтэйгээ, улс улстайгаа үнэхээр итгэлцэж хамтдаа өсөхийн тулд юу хэрэгтэй вэ?»"
   },
   "about.ceo_p3": {
     "ko": "그 답을 찾아가는 과정에서 BSH International 주식회사를 세워 그 출발을 하였습니다.",
@@ -580,11 +580,11 @@ window.I18N = {
     "mn": "Бизнесийн удирдлагын доктор (Ph.D. in Business Administration)"
   },
   "about.pf_deg2": {
-    "ko": "상담심리학 박사 (Ph.D. in Counseling Psychology)",
-    "en": "Ph.D. in Counseling Psychology",
-    "ja": "カウンセリング心理学博士 (Ph.D. in Counseling Psychology)",
-    "zh": "咨询心理学博士 (Ph.D. in Counseling Psychology)",
-    "mn": "Зөвлөгөөний сэтгэл судлалын доктор (Ph.D. in Counseling Psychology)"
+    "ko": "상담학 박사 (Ph.D. in Counseling)",
+    "en": "Ph.D. in Counseling",
+    "ja": "カウンセリング学博士 (Ph.D. in Counseling)",
+    "zh": "咨询学博士 (Ph.D. in Counseling)",
+    "mn": "Зөвлөгөө судлалын доктор (Ph.D. in Counseling)"
   },
   "about.pf_field_h": {
     "ko": "전문분야",
@@ -608,11 +608,11 @@ window.I18N = {
     "mn": "Гол чадвар"
   },
   "about.pf_core_v": {
-    "ko": "사람에 대한 깊은 이해(상담심리)와 조직·시장에 대한 전문성(경영학)을 결합한 통합적 컨설팅",
-    "en": "Integrated consulting that combines deep understanding of people (counseling psychology) with expertise in organizations and markets (business administration)",
-    "ja": "人への深い理解(カウンセリング心理)と、組織・市場への専門性(経営学)を結合した統合的コンサルティング",
-    "zh": "将对人的深刻理解（咨询心理）与对组织、市场的专业（管理学）相结合的整合式咨询",
-    "mn": "Хүний гүн ойлголт (сэтгэл зүйн зөвлөгөө) болон байгууллага, зах зээлийн мэргэжил (бизнесийн удирдлага)-ийг хослуулсан нэгдсэн зөвлөгөө"
+    "ko": "사람에 대한 깊은 이해(상담학)와 조직·시장에 대한 전문성(경영학)을 결합한 통합적 컨설팅",
+    "en": "Integrated consulting that combines deep understanding of people (counseling) with expertise in organizations and markets (business administration)",
+    "ja": "人への深い理解(カウンセリング)と、組織・市場への専門性(経営学)を結合した統合的コンサルティング",
+    "zh": "将对人的深刻理解（咨询学）与对组织、市场的专业（管理学）相结合的整合式咨询",
+    "mn": "Хүний гүн ойлголт (зөвлөгөө) болон байгууллага, зах зээлийн мэргэжил (бизнесийн удирдлага)-ийг хослуулсан нэгдсэн зөвлөгөө"
   },
   "about.pf_note": {
     "ko": "※ 상세 경력, 학력, 자격사항 등은 추가 정보 제공 시 보강될 예정입니다.",
@@ -1238,11 +1238,11 @@ window.I18N = {
     "mn": "Байгууллагын өсөлт, хүний өөрчлөлтийг хамтад нь зохион бүтээнэ."
   },
   "consulting.hero_lead": {
-    "ko": "경영학 박사와 상담심리학 박사 학위를 겸비한 전문성을 바탕으로, 기업에는 조직 성장을 위한 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 이끄는 코칭을 제공합니다.",
-    "en": "Backed by doctorates in business administration and counseling psychology, we provide management solutions for organizational growth to companies, and coaching that drives life and career change for individuals.",
-    "ja": "経営学博士とカウンセリング心理学博士の専門性を基盤に、企業には組織成長のための経営ソリューションを、個人には人生とキャリアの変化を導くコーチングを提供します。",
-    "zh": "以管理学博士与咨询心理学博士的专业为基础，为企业提供促进组织成长的管理方案，为个人提供引领人生与职业转变的教练。",
-    "mn": "Бизнесийн удирдлага болон сэтгэл зүйн зөвлөгөөний докторын мэдлэгт тулгуурлан компанид байгууллагын өсөлтийн менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг хөтлөх коучинг үзүүлнэ."
+    "ko": "경영학 박사와 상담학 박사 학위를 겸비한 전문성을 바탕으로, 기업에는 조직 성장을 위한 경영 솔루션을, 개인에게는 삶과 커리어의 변화를 이끄는 코칭을 제공합니다.",
+    "en": "Backed by doctorates in business administration and counseling, we provide management solutions for organizational growth to companies, and coaching that drives life and career change for individuals.",
+    "ja": "経営学博士とカウンセリング学博士の専門性を基盤に、企業には組織成長のための経営ソリューションを、個人には人生とキャリアの変化を導くコーチングを提供します。",
+    "zh": "以管理学博士与咨询学博士的专业为基础，为企业提供促进组织成长的管理方案，为个人提供引领人生与职业转变的教练。",
+    "mn": "Бизнесийн удирдлага болон зөвлөгөөний докторын мэдлэгт тулгуурлан компанид байгууллагын өсөлтийн менежментийн шийдэл, хувь хүнд амьдрал, карьерын өөрчлөлтийг хөтлөх коучинг үзүүлнэ."
   },
   "consulting.corp_eyebrow": {
     "ko": "기업 대상",
