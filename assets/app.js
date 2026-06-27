@@ -46,9 +46,7 @@
     }).join("");
 
     var langOptions = LANGS.map(function (L) {
-      return '<button class="lang-item" data-lang="' + L.code + '" role="option">' +
-               '<span class="lang-short">' + L.short + '</span><span class="lang-label">' + L.label + '</span>' +
-             '</button>';
+      return '<button class="lang-pill" data-lang="' + L.code + '" lang="' + L.code + '">' + L.label + '</button>';
     }).join("");
 
     var gnav = el("header", { "class": "global-nav" });
@@ -57,13 +55,7 @@
         '<a class="gnav-brand" href="index.html"><span class="dot"></span>BSH<small>International</small></a>' +
         '<nav class="gnav-links" id="gnavLinks">' + links + '</nav>' +
         '<div class="gnav-right">' +
-          '<div class="lang-select" id="langSelect">' +
-            '<button class="lang-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">' +
-              '<span id="langCurrent">KO</span>' +
-              '<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>' +
-            '</button>' +
-            '<div class="lang-menu" id="langMenu" role="listbox">' + langOptions + '</div>' +
-          '</div>' +
+          '<div class="lang-inline" id="langInline" role="group" aria-label="Language">' + langOptions + '</div>' +
           '<button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>' +
         '</div>' +
       '</div>';
@@ -140,10 +132,12 @@
     }
     var tkey = document.body.getAttribute("data-title-key");
     if (tkey) { var tv = t(tkey, lang); if (tv) document.title = tv; }
-    var cur = document.getElementById("langCurrent");
-    if (cur) for (var k = 0; k < LANGS.length; k++) if (LANGS[k].code === lang) { cur.textContent = LANGS[k].short; break; }
-    var items = document.querySelectorAll(".lang-item");
-    for (var m = 0; m < items.length; m++) items[m].classList.toggle("active", items[m].getAttribute("data-lang") === lang);
+    var items = document.querySelectorAll(".lang-pill");
+    for (var m = 0; m < items.length; m++) {
+      var on = items[m].getAttribute("data-lang") === lang;
+      items[m].classList.toggle("active", on);
+      items[m].setAttribute("aria-pressed", on ? "true" : "false");
+    }
   }
 
   function init() {
@@ -153,26 +147,13 @@
     var lang = getLang();
     applyLang(lang);
 
-    var select = document.getElementById("langSelect");
-    var toggle = document.getElementById("langToggle");
-    var menu = document.getElementById("langMenu");
-    if (select && toggle && menu) {
-      toggle.addEventListener("click", function (e) {
-        e.stopPropagation();
-        var open = select.classList.toggle("open");
-        toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      });
-      menu.querySelectorAll(".lang-item").forEach(function (b) {
+    var langInline = document.getElementById("langInline");
+    if (langInline) {
+      langInline.querySelectorAll(".lang-pill").forEach(function (b) {
         b.addEventListener("click", function () {
           lang = b.getAttribute("data-lang");
           setLang(lang); applyLang(lang);
-          select.classList.remove("open");
-          toggle.setAttribute("aria-expanded", "false");
         });
-      });
-      document.addEventListener("click", function () {
-        select.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
       });
     }
 
