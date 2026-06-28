@@ -142,6 +142,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   .lang-pill { font-size: 11px; padding: 5px 6px; }
   .lang-inline { gap: 1px; }
 }
+@media (max-width: 430px) {
+  .gnav-inner { gap: 8px; padding: 0 10px; }
+  .lang-pill { font-size: 10px; padding: 4px 5px; letter-spacing: -0.3px; }
+}
 
 .hamburger { display: none; background: transparent; border: none; padding: 6px; }
 .hamburger span { display: block; width: 18px; height: 1.5px; background: #f5f5f7; margin: 4px 0; transition: .2s; }
