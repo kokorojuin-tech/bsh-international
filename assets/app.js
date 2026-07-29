@@ -1,5 +1,5 @@
 /* =========================================================
-   BSH International — "Gallery" theme chrome + i18n (5 languages)
+   BSH International — "Gallery" theme chrome + i18n (7 languages)
    Requires: assets/i18n.js (window.I18N, window.I18N_LANGS)
    ========================================================= */
 (function () {
