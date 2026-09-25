@@ -118,6 +118,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .gnav-brand small { font-weight: 300; color: #8e8e93; font-size: 13px; letter-spacing: 0; }
 .gnav-links { display: flex; gap: 4px; margin-left: 6px; }
 .gnav-links a {
+  white-space: nowrap;
   font-size: 12px; font-weight: 400; letter-spacing: -0.12px; color: #f5f5f7;
   padding: 6px 11px; border-radius: var(--r-sm); opacity: 0.86;
 }
@@ -341,21 +342,36 @@ ul { margin: 0; padding: 0; list-style: none; }
   .t-hero { font-size: 44px; }
   .t-display { font-size: 36px; }
 }
-@media (max-width: 833px) {
+/* 7 nav links + 7 language pills: collapse to the hamburger before they overflow.
+   Breakpoints follow each language's measured nav width. */
+@media (max-width: 1500px) {
+  .global-nav .gnav-links.open {
+    display: flex; flex-direction: column; gap: 2px;
+    position: fixed; inset: 44px 0 auto 0; background: var(--surface-black);
+    padding: 12px 22px 20px; z-index: 1001;
+  }
+  .global-nav .gnav-links.open a { font-size: 17px; padding: 12px 4px; opacity: 0.95; }
+  html[lang="mn"] .gnav-links { display: none; }
+  html[lang="mn"] .hamburger { display: block; }
+}
+@media (max-width: 1440px) {
+  html[lang="ru"] .gnav-links { display: none; }
+  html[lang="ru"] .hamburger { display: block; }
+}
+@media (max-width: 1360px) {
+  html[lang="ja"] .gnav-links, html[lang="km"] .gnav-links { display: none; }
+  html[lang="ja"] .hamburger, html[lang="km"] .hamburger { display: block; }
+}
+@media (max-width: 1290px) {
   .gnav-links { display: none; }
   .hamburger { display: block; }
+}
+@media (max-width: 833px) {
   .tile-split, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .tile-split.reverse > .tile-visual { order: 0; }
   .triplet, .cols-3 { grid-template-columns: 1fr; }
   .cols-2 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  /* mobile menu tray */
-  .gnav-links.open {
-    display: flex; flex-direction: column; gap: 2px;
-    position: fixed; inset: 44px 0 auto 0; background: var(--surface-black);
-    padding: 12px 22px 20px; z-index: 1001;
-  }
-  .gnav-links.open a { font-size: 17px; padding: 12px 4px; opacity: 0.95; }
 }
 @media (max-width: 640px) {
   .t-hero { font-size: 34px; }

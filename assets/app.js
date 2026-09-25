@@ -24,6 +24,7 @@
     ["index.html",      "nav.home"],
     ["about.html",      "nav.about"],
     ["medical.html",    "nav.medical"],
+    ["concierge.html",  "nav.concierge"],
     ["export.html",     "nav.export"],
     ["consulting.html", "nav.consulting"],
     ["contact.html",    "nav.contact"]
@@ -93,6 +94,7 @@
             '<h4 data-i18n="footer.explore_h"></h4>' +
             '<a href="about.html" data-i18n="nav.about"></a>' +
             '<a href="medical.html" data-i18n="nav.medical"></a>' +
+            '<a href="concierge.html" data-i18n="nav.concierge"></a>' +
             '<a href="export.html" data-i18n="nav.export"></a>' +
             '<a href="consulting.html" data-i18n="nav.consulting"></a>' +
             '<a href="contact.html" data-i18n="nav.contact"></a>' +
@@ -100,6 +102,7 @@
           '<div class="footer-col">' +
             '<h4 data-i18n="footer.biz_h"></h4>' +
             '<a href="medical.html" data-i18n="home.biz1_t"></a>' +
+            '<a href="concierge.html" data-i18n="nav.concierge"></a>' +
             '<a href="export.html" data-i18n="home.biz2_t"></a>' +
             '<a href="consulting.html" data-i18n="home.biz3_t"></a>' +
           '</div>' +
